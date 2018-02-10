@@ -86,3 +86,33 @@ header a:hover{
 	font-family: sans-serif;
 }
 
+/* Products */
+#recommendedProduct{
+	color: #fffff;
+	background: #d8f0ee;
+}
+
+#recommendedProduct h1{
+	margin-top:20px;
+}
+
+/* Boxes */
+
+#recommendedProduct #containerBox{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#recommendedProduct .box{
+	padding: 10px;
+
+	
+}
+
+
+
+
+
+
+
+
