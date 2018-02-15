@@ -10,73 +10,80 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header>
+	<header class="text-center">
 		<div class = "container">
-			<div id = "branding">
-				<h1><span id = "logo"> Salt</span> and <span id = "logo"> Mint </span></h1>	
-				<!--<img src="./images/logo.jpg">*/-->
-			</div>
-			<nav>
-				<ul>
-					<li class = "currentPage"><a href="index.html">Home</a></li>
-					<li><a href="producst.html">Products</a></li>
-					<li><a href="contact.html">Contact</a></li>
+			<img class="no-margin flex layout-column width-100" src="./images/logo.png">
+		</div>
+
+		<div class = "container">
+			<nav class = "margin-top-10">
+				<label for="show-menu" class="show-menu menu-text demi-bold">Show Menu</label>
+				<input type="checkbox" id="show-menu" role="button">
+				<ul class = "no-padding no-margin list-style-type" id="menu">
+					<li class = "inline-block align-left">
+						<a class = "brown-color demi-bold menu-text inline-block text-center menu-container" href="index.html">Home</a>
+					</li>
+					<li class = "inline-block align-left">
+						<a class = "menu-text gray-color inline-block text-center menu-container" href="producst.html">Products</a>
+					</li>
+					<li class = "inline-block align-left">
+						<a class = "menu-text gray-color inline-block text-center menu-container" href="contact.html">Contact</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
+		
 	</header>
 
-	<section id="showcase">
-		<div class = "container">
-			<h1> New Collection</h1>
+	<section>
+		<a href="producst.html"><img class = "width-100" src="./images/New collection.jpg"></a>
+	</section>
+
+	<section>
+		<h1 class = "text-center padding-10">Recommended Product</h1>
+		<div class = "flex layout-row">
+			<div class = "flex-33 padding-5">
+				<div class = "flex relative-position">
+					<img class = "width-100 no-padding" src="./images/Green Tea Essential Oil Crystal spa.jpg">
+					<div class = "text-center layout-column flex padding-5">
+						<p class = "no-margin light-text font-13">First</p>
+						<p class = "demi-bold no-margin">500</p>
+					</div>
+				</div>
+			</div>
+			<div class = "flex-33 padding-5">
+				<div class = "flex relative-position">
+					<img class = "width-100 no-padding" src="./images/Green-Tea Essential Oil.jpg">
+					<div class = "text-center layout-column flex padding-5">
+						<p class = "no-margin light-text font-13">Second</p>
+						<p class = "demi-bold no-margin">500</p>
+					</div>
+				</div>
+			</div>
+			<div class = "flex-33 padding-5">
+				<div class = "flex relative-position">
+					<img class = "width-100 no-padding" src="./images/Green Tea Essential Oil Crystal.jpg">
+					<div class = "text-center layout-column flex padding-5">
+						<p class = "no-margin light-text font-13">Third</p>
+						<p class = "demi-bold no-margin">500</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex layout-row align-center max-width-100">
+			<a class="md-button " href='producst.html'>View all products</a>
 		</div>
 	</section>
 
-	<section id="recommendedProduct">
-		<h1>Recommended Product</h1>
-		<div id = "containerBox">
-			<div class = "box">
-				<div class = imageGridContainer>
-					<img class = "imageSettings" src="./images/Green Tea Essential Oil Crystal spa.jpg">
-					<div class = "textSettings textCenter layoutColumn flex">
-						<p class = "no-margin light-text">First</p>
-						<p class = "no-margin">500</p>
-					</div>
-				</div>
-			</div>
-			<div class = "box">
-				<div class = imageGridContainer>
-					<img class = "imageSettings" src="./images/Green-Tea Essential Oil.jpg">
-					<div class = "textSettings textCenter layoutColumn flex">
-						<p class = "no-margin light-text">Second</p>
-						<p class = "no-margin">500</p>
-					</div>
-				</div>
-			</div>
-			<div class = "box">
-				<div class = "imageGridContainer">
-					<img class = "imageSettings" src="./images/Green Tea Essential Oil Crystal.jpg">
-					<div class = "textSettings textCenter layoutColumn flex">
-						<p class = "no-margin light-text">Third</p>
-						<p class = "no-margin">500</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="goToProducts">
-			<a id="goToProductsButton" href='producst.html'>View all products</a>
-		</div>
-	</section>
-
-	<section id="aboutMe">
+	<section>
 		<div class="container">
-			<div id="aboutMeContainer">
-			<h1 class = "demi-bold">About me</h1>
-			<p>Make your own sea salt and peppermint body scrub, and you'll feel like you just stepped out of a spa for a fraction of the price</p>
-			<p>Welcome!</p>
+			<div clss="flex layout-column">
+				<h1 class = "text-center padding-10">About me</h1>
+				<p class = "align-center font-14 line-height-1 text-center">Make your own sea salt and peppermint body scrub, and you'll feel like you just stepped out of a spa for a fraction of the price</p>
+				<p class = "align-center font-14 line-height-1 text-center">Welcome!</p>
+			</div>
 		</div>
-	</div>
 	</section>
 
 	<section id="followUs">
@@ -86,7 +93,11 @@
 	</section>
 
 	<footer> 
-		<p> Salt and mint, Copyright &copy; 2018 </p>
+		<p class = "flex layout-column text-center"> Salt and mint, Copyright &copy; 2018 </p>
 	</footer>
+
+
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript"></script>
 </body>
 </html>

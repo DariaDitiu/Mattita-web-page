@@ -8,63 +8,57 @@ body{
 	background-color: #f4f4f4;
 }
 
-/* Global */
 .container{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
 
-/* Header */
-header{
-	padding-top: 30px;
-	min-height: 70px;
+.border-bottom{
 	border-bottom: #dacdbc  3px solid;
-	text-align: center;
+}
+
+header a:hover{
+	color:#2a2c38;
 }
 
 header a{
-	color: #030303;
+	line-height: 0;
+}
+
+.menu-text{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
 }
 
-header nav{
+.menu-container{
+	line-height: 50px;
+	min-width:140px;
+	height: 50px;
+}
+
+.show-menu {
+	background: #e4f0f0;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+.margin-top-10{
 	margin-top: 10px;
 }
 
-header ul{
-	margin: 0px;
-	padding: 0px;
-	display: inline-block;
-	text-align: left;
-}
-
-header li{
-	float: left;
-	display: inline;
-	padding:  10px 10px 10px 10px;
-}
-
-header #branding h1{
-	margin: 0;
-}
-
-header #logo{
-	color:#7ac3bc;
-	font-weight: bold;
-	font-family: cursive; 
-	font-size: 45px;
-}
-
-header .currentPage a{
-	color: #c28f52;
-	font-weight: bold;
-}
-
-header a:hover{
+.dark-grayish-blue{
 	color:#2a2c38;	
+}
+
+.brown-color{
+	color: #c28f52;
+}
+
+.gray-color{
+	color: #030303;
 }
 
 /* Showcase*/
@@ -83,81 +77,10 @@ header a:hover{
 	margin-top: 200px;
 	font-size: 45px;
 	margin-bottom: 10px;
-	font-family: sans-serif;
 }
 
-/* Products */
-#recommendedProduct{
-	color: #fffff;	
-}
 
-#recommendedProduct h1{
-	margin-top:0;
-	text-align: center;
-	padding-top: 10px;
-}
-
-/* Boxes */
-
-#recommendedProduct #containerBox{
-	display: flex;
-	flex-direction: row;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 0%;	
-}
-
-#recommendedProduct .box{
-	max-height: 100%;
-	max-width: 33%;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 100%;
-	padding: 5px;	
-}
-
-#recommendedProduct .imageGridContainer{
-	position:relative;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 0%;
-}
-
-#recommendedProduct .imageSettings{
-	width: 100%; 
-	height: auto;
-	min-width: 20%;
-	padding: 0;
-}
-
-#recommendedProduct .textSettings{
-	padding: 8px;
-	
-}
-
-.no-margin{
-	margin: 0;
-}
-
-.light-text{
-	font-weight: 300;
-}
-
-#recommendedProduct p{
-	font-size: 13px;
-}
-
-#recommendedProduct #goToProducts{
-	display: flex;
-	flex-direction: row;
-	flex: 1;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	max-width: 100%;
-}
-
-#recommendedProduct #goToProductsButton {
+.md-button {
 	background-color: #616161;
 	color: #ffffff;
 	text-transform: none;
@@ -170,53 +93,135 @@ header a:hover{
 	line-height: 36px;
 	font-size: 14px;
 	letter-spacing: .01em;
+
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 }
 
-#recommendedProduct #goToProductsButton:hover{
+.md-button:hover{
 	color: #d2b08d;
 }
 
-.demiBold{
-	font-weight: 500;
+.demi-bold{
+	font-weight: 700;
 }
 
-.textCenter{
+.text-center{
 	text-align: center;
 }
 
-.layoutColumn{
+.align-center{
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.layout-column{
+	display: flex;
 	flex-direction: column;
+}
+
+.layout-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.light-text{
+	font-weight: 300;
 }
 
 .flex{
-	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
 }
 
-#aboutMe #aboutMeContainer{
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-	text-align: center;	
+.padding-10{
+	padding: 10px;
 }
 
-#aboutMe p{
-	font-size: 14px;
-	margin: 0 0 10px;
+.padding-5{
+	padding: 5px;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.flex-33{
+	max-height: 100%;
+	max-width: 33%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;	
+}
+
+.relative-position{
+	position: relative;
+}
+
+.width-100{
+	width: 100%; 
+	height: 85&;
+}
+
+.font-13{
+	font-size: 13px;
+}
+
+.font-14{
+	font-size: 13px;
+}
+
+.max-width-100{
+	max-width: 100%;
+}
+
+.line-height-1{
 	line-height: 1.1;
 }
 
-footer p{
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-	text-align: center;	
+.list-style-type{
+	list-style-type:none;
 }
 
+/*Hide checkbox*/
+input[type=checkbox]{
+	display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+	display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+	.active{
+		display: block;
+	}
 
-
+}
