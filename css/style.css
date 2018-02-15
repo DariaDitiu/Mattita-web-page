@@ -37,7 +37,6 @@ header a{
 	line-height: 50px;
 	min-width:140px;
 	height: 50px;
-	background: #e4f0f0;
 }
 
 .show-menu {
@@ -195,7 +194,6 @@ input[type=checkbox]:checked ~ #menu{
 	ul {
 		position: absolute;
 		display: none;
-		background: #e4f0f0;
 	}
 	/*Make all menu links full width*/
 	ul li, li a {
@@ -205,6 +203,5 @@ input[type=checkbox]:checked ~ #menu{
 	.show-menu {
 		display:block;
 	}
-
 }
 
