@@ -3,19 +3,20 @@ body{
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 0px;
-	margin-left:  12%;
-	margin-right: 12%;
+	margin-left:  18%;
+	margin-right: 18%;
 	background-color: #f4f4f4;
 }
 
 .container{
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	overflow: hidden;
 }
 
 .border-bottom{
 	border-bottom: #dacdbc  3px solid;
+	margin-bottom: 2px;
 }
 
 header a:hover{
@@ -30,7 +31,7 @@ header a{
 .menu-text{
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .menu-container{
@@ -41,7 +42,7 @@ header a{
 
 .show-menu {
 	text-align: center;
-	padding: 10px 0;
+	padding: 0 0 10px 0;
 	display: none;
 }
 
@@ -119,14 +120,17 @@ header a{
 	margin: 0;
 }
 
-.light-text{
-	font-weight: 300;
+.auto-margin{
+	margin: auto;
 }
 
-.flex{
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 0%;
+.no-margin-top-bottom{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.light-text{
+	font-weight: 300;
 }
 
 .padding-10{
@@ -141,12 +145,20 @@ header a{
 	padding: 0;
 }
 
+.flex{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+	flex-wrap: wrap;
+}
+
 .flex-33{
 	max-height: 100%;
-	max-width: 33%;
+	max-width: 33.33%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;	
+	box-sizing: border-box;
 }
 
 .relative-position{
@@ -155,14 +167,10 @@ header a{
 
 .width-100{
 	width: 100%; 
-	height: 85&;
+	height: 85%;
 }
 
 .font-13{
-	font-size: 13px;
-}
-
-.font-14{
 	font-size: 13px;
 }
 
@@ -178,6 +186,10 @@ header a{
 	list-style-type:none;
 }
 
+p{
+	font-size: 14px;
+}
+
 /*Hide checkbox*/
 input[type=checkbox]{
 	display: none;
@@ -187,22 +199,54 @@ input[type=checkbox]:checked ~ #menu{
 	display: block;
 }
 
-/*Responsive Styles*/
-@media screen and (max-width : 760px){
+@media all and (max-width : 760px){
 
-	/*Make dropdown links appear inline*/
-	ul {
+	body{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	header ul {
 		position: absolute;
 		display: none;
+		left: 0;
+		right: 0;
+		background: #f4f4f4;
 	}
-	/*Make all menu links full width*/
-	ul li, li a {
+
+	header ul li, li a {
 		width: 100%;
 	}
-	/*Display 'show menu' link*/
+
+	h1{
+		font-size: 16px;
+	}
+
+	p{
+		font-size: 11px;
+	}
+
+	.menu-text{
+		font-size: 16px;
+	}
+
 	.show-menu {
 		display:block;
 	}
 
+	.flex-33{
+		max-width: 100%;
+	}
 }
 
+@media all and (max-width: 1000px) and (min-width: 760px){
+
+	body{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.flex-33{
+		max-width: 50%;
+	}
+}
