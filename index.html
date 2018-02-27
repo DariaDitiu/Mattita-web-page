@@ -8,6 +8,11 @@
 	<meta name="author" content="Salt and mint">
 	<title>Salt and Mint | Welcome </title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!--[if IE 9]>
+	<link rel="stylesheet" type="text/css" href="./css/ie9specific.css" />
+	<![endif]-->
+	
+
 </head>
 <body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
 	<header class="text-center border-bottom">
@@ -36,34 +41,34 @@
 	</header>
 
 	<section>
-		<a href="producst.html"><img class="width-100" id="new-collection" src="./images/New collection.jpg"></a>
+		<a href="producst.html"><img class="width-100 no-border" id="new-collection" src="./images/New collection.jpg"></a>
 	</section>
 
 	<section>
 		<h1 class="text-center padding-10">Recommended Product</h1>
-		<div class="flex layout-row">
-			<div class="flex-33 padding-5">
+		<div class="flex layout-row table">
+			<div class="flex-33 padding-5 table-cell">
 				<div class="flex relative-position">
 					<img class="width-100 no-padding" src="./images/Green Tea Essential Oil Crystal spa.jpg">
-					<div class="text-center layout-column flex padding-5">
+					<div class="text-center layout-column flex ruby-text-container padding-5">
 						<p class="no-margin light-text font-13">First</p>
 						<p class="demi-bold no-margin">500</p>
 					</div>
 				</div>
 			</div>
-			<div class="flex-33 padding-5">
+			<div class="flex-33 padding-5 table-cell">
 				<div class="flex relative-position">
 					<img class="width-100 no-padding" src="./images/Green-Tea Essential Oil.jpg">
-					<div class="text-center layout-column flex padding-5">
+					<div class="text-center layout-column flex  ruby-text-container padding-5">
 						<p class="no-margin light-text font-13">Second</p>
 						<p class="demi-bold no-margin">500</p>
 					</div>
 				</div>
 			</div>
-			<div class="flex-33 padding-5">
+			<div class="flex-33 padding-5 table-cell">
 				<div class="flex relative-position">
 					<img class="width-100 no-padding" src="./images/Green Tea Essential Oil Crystal.jpg">
-					<div class="text-center layout-column flex padding-5">
+					<div class="text-center layout-column flex ruby-text-container padding-5">
 						<p class="no-margin light-text font-13">Third</p>
 						<p class="demi-bold no-margin">500</p>
 					</div>
@@ -71,8 +76,8 @@
 			</div>
 		</div>
 
-		<div class="flex layout-row align-center max-width-100">
-			<a class="md-button " href='producst.html'>View all products</a>
+		<div class="flex layout-row align-center max-width-100 table">
+			<a class="md-button table-cell" href='producst.html'>View all products</a>
 		</div>
 	</section>
 
@@ -92,8 +97,8 @@
 		</div>
 	</section>
 
-	<footer> 
-		<p class="flex layout-column text-center "> Salt and mint, Copyright &copy; 2018 </p>
+	<footer>  
+		<p class="container text-center"> Salt and mint, Copyright &copy; 2018 </p>
 	</footer>
 
 	<script src="js/javascript.js"></script>

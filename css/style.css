@@ -78,10 +78,16 @@ header a{
 
 	border-radius: 2px;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+
+	display: table;
 }
 
 .md-button:hover{
 	color: #d2b08d;
+}
+
+.no-border{
+	border: 0px;
 }
 
 .demi-bold{
@@ -107,12 +113,20 @@ header a{
 }
 
 .layout-column{
-	display: flex;
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	flex-direction: column;
 }
 
 .layout-row{
-	display: flex;
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	flex-direction: row;
 }
 
