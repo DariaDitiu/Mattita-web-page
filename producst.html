@@ -1,9 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Conceptul salt & mint este acela de a .....">
+	<meta name="keywords" content="salt, mint">
+	<meta name="author" content="Salt and mint">
+	<title>Salt and Mint | Products </title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!--[if IE 9]>
+	<link rel="stylesheet" type="text/css" href="./css/ie9specific.css" />
+<![endif]-->
+
+
 </head>
-<body>
+<body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
+	<header class="text-center border-bottom">
+		<div class="container">
+			<img id = "logo" class="flex layout-column width-50 align-center auto-margin" src="./images/logo.png">
+		</div>
+
+		<div class="container">
+			<nav class="margin-top-10">
+				<label for="show-menu" class="show-menu menu-text">Show Menu</label>
+				<input type="checkbox" id="show-menu" role="button">
+				<ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
+					<li class="inline-block align-left">
+						<a class="menu-text gray-color inline-block text-center menu-container" href="index.html">Home</a>
+					</li>
+					<li class="inline-block align-left">
+						<a class="brown-color demi-bold menu-text inline-block text-center menu-container" href="producst.html">Products</a>
+					</li>
+					<li class="inline-block align-left">
+						<a class="menu-text gray-color inline-block text-center menu-container" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+	</header>
+
+	<section>
+		<img id="products-type" class="width-100 no-border" src="./images/main oil.jpg">
+	</section>
+
+	<section>
+		<div class="container border-bottom">
+			<nav class="margin-top-10">
+				<ul class="no-margin-top-bottom list-style-type">
+					<li class="inline-block align-left">
+						<a id = "oilProducts" class="brown-color demi-bold inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main oil.jpg"); return false;'>Oils</a>
+					</li>
+					<li class="inline-block align-left">
+						<a id = "scrubProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main scrub.jpg"); return false;'>Scrub</a>
+					</li>
+					<li class="inline-block align-left">
+						<a id = "cosmeticsProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main cosmetics.jpg"); return false;'>Cosmetics</a>
+					</li>
+					<li class="inline-block align-left">
+						<a id = "foodProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main food.jpg"); return false;'>Food</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<section>
+		
+	</section>
+
+	<section id="followUs">
+		<div class="container border-bottom text-center">
+			<h1>FollowUs on ......</h1>
+		</div>
+	</section>
+
+	<footer>  
+		<p class="container text-center"> Salt and mint, Copyright &copy; 2018 </p>
+	</footer>
+
+	<script src="js/javascript.js"></script>
 
 </body>
 </html>

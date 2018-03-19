@@ -181,11 +181,19 @@ header a{
 
 .width-100{
 	width: 100%; 
+}
+
+.width-50{
+	width: 50%; 
 	height: 85%;
 }
 
 .font-13{
 	font-size: 13px;
+}
+
+.font-16{
+	font-size: 16px;
 }
 
 .max-width-100{
@@ -232,6 +240,10 @@ input[type=checkbox]:checked ~ #menu{
 		width: 100%;
 	}
 
+	#logo{
+		width: 100%; 
+	}
+
 	h1{
 		font-size: 16px;
 	}
@@ -263,4 +275,14 @@ input[type=checkbox]:checked ~ #menu{
 	.flex-33{
 		max-width: 50%;
 	}
+}
+
+.no-text-decoration{
+	text-decoration: none;
+}
+
+.image-container{
+	width:100%;
+	height:70vh;
+	overflow:hidden;
 }
