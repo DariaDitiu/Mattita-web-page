@@ -1,0 +1,84 @@
+[{
+	"type":"oilProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"150",
+	"image":"./images/salt Oil.jpg"
+},
+{
+	"type":"oilProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"123",
+	"image":"./images/Essential Oil Crystal.jpg"
+},
+{
+	"type":"oilProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"258",
+	"image":"./images/Green-Tea Essential Oil.jpg"
+},
+{
+	"type":"scrubProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"135",
+	"image":"./images/salt food.jpg"
+},
+{
+	"type":"scrubProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"123",
+	"image":"./images/Green Tea Essential Oil Crystal.jpg"
+},
+{
+	"type":"scrubProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"258",
+	"image":"./images/Green Tea Essential Oil Crystal spa.jpg"
+},
+{
+	"type":"scrubProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"123",
+	"image":"./images/Mint-Salt scrub.jpg"
+},
+{
+	"type":"scrubProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"258",
+	"image":"./images/Mint-Bath-Salt scrub.jpg"
+},
+{
+	"type":"cosmeticsProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"123",
+	"image":"./images/soap.jpg"
+},
+{
+	"type":"cosmeticsProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"258",
+	"image":"./images/shampoo.jpg"
+},
+{
+	"type":"cosmeticsProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"123",
+	"image":"./images/polish nail.jpg"
+},
+{
+	"type":"cosmeticsProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"258",
+	"image":"./images/body lotion.jpg"
+},
+{
+	"type":"foodProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"123",
+	"image":"./images/salt food.jpg"
+},
+{
+	"type":"foodProducts", 
+	"description":"Pleasantly suitable for...",
+	"price":"258",
+	"image":"./images/mint tea.jpg"
+}]

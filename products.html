@@ -14,7 +14,7 @@
 
 
 </head>
-<body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
+<body onload="readProductInformation()" onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
 	<header class="text-center border-bottom">
 		<div class="container">
 			<img id = "logo" class="flex layout-column width-50 align-center auto-margin" src="./images/logo.png">
@@ -46,25 +46,26 @@
 
 	<section>
 		<div class="container border-bottom">
-			<nav class="margin-top-10">
-				<ul class="no-margin-top-bottom list-style-type">
+			<nav>
+				<ul class="no-margin-top-bottom list-style-type text-center">
 					<li class="inline-block align-left">
-						<a id = "oilProducts" class="brown-color demi-bold inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main oil.jpg"); return false;'>Oils</a>
+						<a id = "oilProducts" class="brown-color demi-bold inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main oil.jpg", "oilProducts"); return false;'>Oils</a>
 					</li>
 					<li class="inline-block align-left">
-						<a id = "scrubProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main scrub.jpg"); return false;'>Scrub</a>
+						<a id = "scrubProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main scrub.jpg", "scrubProducts"); return false;'>Scrub</a>
 					</li>
 					<li class="inline-block align-left">
-						<a id = "cosmeticsProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main cosmetics.jpg"); return false;'>Cosmetics</a>
+						<a id = "cosmeticsProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main cosmetics.jpg", "cosmeticsProducts"); return false;'>Cosmetics</a>
 					</li>
 					<li class="inline-block align-left">
-						<a id = "foodProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main food.jpg"); return false;'>Food</a>
+						<a id="foodProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProductsPhoto("./images/main food.jpg", "foodProducts"); return false;'>Food</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 	</section>
-
+	<div id="allProductsType" class="flex layout-row table">
+	</div>
 	<section>
 		
 	</section>
@@ -80,6 +81,7 @@
 	</footer>
 
 	<script src="js/javascript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 </html>
