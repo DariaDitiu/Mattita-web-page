@@ -6,7 +6,7 @@
 	<meta name="description" content="Conceptul salt & mint este acela de a .....">
 	<meta name="keywords" content="salt, mint">
 	<meta name="author" content="Salt and mint">
-	<title>Salt and Mint | Products </title>
+	<title>Salt and Mint | Product Description </title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<!--[if IE 9]>
 	<link rel="stylesheet" type="text/css" href="./css/ie9specific.css" />
@@ -14,7 +14,7 @@
 
 
 </head>
-<body onload="readProductInformation()" onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
+<body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
 	<header class="text-center border-bottom">
 		<div class="container">
 			<img id = "logo" class="flex layout-column width-50 align-center auto-margin" src="./images/logo.png">
@@ -37,39 +37,28 @@
 				</ul>
 			</nav>
 		</div>
-		
 	</header>
 
 	<section>
-		<img id="products-type" class="width-100 no-border" src="./images/main oil.jpg">
-	</section>
-
-	<section>
-		<div class="container border-bottom">
-			<nav>
-				<ul class="no-margin-top-bottom list-style-type text-center">
-					<li class="inline-block align-left">
-						<a id = "oilProducts" class="brown-color demi-bold inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main oil.jpg", "oil"); return false;'>Oils</a>
-					</li>
-					<li class="inline-block align-left">
-						<a id = "scrubProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main scrub.jpg", "scrub"); return false;'>Scrub</a>
-					</li>
-					<li class="inline-block align-left">
-						<a id = "cosmeticsProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main cosmetics.jpg", "cosmetics"); return false;'>Cosmetics</a>
-					</li>
-					<li class="inline-block align-left">
-						<a id="foodProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main food.jpg", "food"); return false;'>Food</a>
-					</li>
-				</ul>
-			</nav>
+		<div class="border-bottom">
+			<a id="productLocation" class="gray-color menu-container font-16 no-text-decoration" href="products.html"> Product | </a>
 		</div>
 	</section>
-	<div id="allProductsType" class="flex layout-row table border-bottom">
-	</div>
-	<section>
-		
-	</section>
 
+	<div id="productName"></div>
+	<div id="product" class="flex layout-row table border-bottom">
+		<div class="flex-50 layout-column padding-5 no-left-padding table-cell">
+			<div id="productImage">
+			</div>
+			<div id="productImages" class= "flex layout-row table no-left-padding">
+			</div>
+		</div>
+		<div class="flex layout-column padding-5  no-left-padding table-cell">
+			<div id="productDescription" class= "flex relative-position">
+			</div>
+		</div>
+	</div>
+	
 	<section id="followUs">
 		<div class="container border-bottom text-center">
 			<h1>FollowUs on ......</h1>
@@ -81,9 +70,8 @@
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.js"></script>
+	<script src="js/productDescriptionJQuery.js"></script>
 	<script src="js/javascript.js"></script>
-	
 
 </body>
 </html>

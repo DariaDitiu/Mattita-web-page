@@ -112,6 +112,15 @@ header a{
 	text-align: left;
 }
 
+.align-right{
+	text-align: right;
+}
+
+.align-justify{
+	line-height: 1.5;
+    text-align: justify;
+}
+
 .layout-column{
 	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -151,8 +160,21 @@ header a{
 	padding: 10px;
 }
 
+.padding-top-bottom-10{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.padding-left-15{
+	padding-left: 15px;
+}
+
 .padding-5{
 	padding: 5px;
+}
+
+.no-left-padding{
+	padding-left: 0;
 }
 
 .no-padding{
@@ -169,6 +191,15 @@ header a{
 .flex-33{
 	max-height: 100%;
 	max-width: 33.33%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;	
+	box-sizing: border-box;
+}
+
+.flex-50{
+	max-height: 100%;
+	max-width: 50%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;	
@@ -212,6 +243,16 @@ p{
 	font-size: 14px;
 }
 
+.no-text-decoration{
+	text-decoration: none;
+}
+
+.image-container{
+	width:100%;
+	height:70vh;
+	overflow:hidden;
+}
+
 /*Hide checkbox*/
 input[type=checkbox]{
 	display: none;
@@ -252,6 +293,10 @@ input[type=checkbox]:checked ~ #menu{
 		font-size: 11px;
 	}
 
+	li{
+		font-size: 11px;
+	}
+
 	.menu-text{
 		font-size: 16px;
 	}
@@ -261,6 +306,9 @@ input[type=checkbox]:checked ~ #menu{
 	}
 
 	.flex-33{
+		max-width: 100%;
+	}
+	.flex-60{
 		max-width: 100%;
 	}
 }
@@ -275,14 +323,7 @@ input[type=checkbox]:checked ~ #menu{
 	.flex-33{
 		max-width: 50%;
 	}
-}
-
-.no-text-decoration{
-	text-decoration: none;
-}
-
-.image-container{
-	width:100%;
-	height:70vh;
-	overflow:hidden;
+	.flex-60{
+		max-width: 50%;
+	}
 }
