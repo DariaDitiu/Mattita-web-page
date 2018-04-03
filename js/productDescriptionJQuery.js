@@ -20,7 +20,7 @@ function fillAllInformation(productID, products){
 
 	
 	$('<span/>',{
-		'class': 'gray-color menu-container font-16 no-text-decoration',
+		'class': 'gray-color font-16 no-text-decoration padding-5',
 		text: ' '+ type +''
 	}).appendTo('#productLocation');
 	
@@ -69,7 +69,7 @@ function getID(){
 function fillProductImages(product){
 	
 	$('<img/>',{
-		'class': 'width-100 no-padding',
+		'class': 'width-100 padding-5',
 		'src': ''+product.image+''
 	}).appendTo('#productImage');
 

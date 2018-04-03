@@ -29,48 +29,43 @@
 						<a class="menu-text gray-color inline-block text-center menu-container" href="index.html">Home</a>
 					</li>
 					<li class="inline-block align-left">
-						<a class="brown-color demi-bold menu-text inline-block text-center menu-container" href="products.html">Products</a>
+						<a class="menu-text gray-color inline-block text-center menu-container" href="products.html">Products</a>
 					</li>
 					<li class="inline-block align-left">
-						<a class="menu-text gray-color inline-block text-center menu-container" href="contact.html">Contact</a>
+						<a class="brown-color demi-bold menu-text inline-block text-center menu-container" href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<section>
-		<div class="border-bottom padding-5 no-left-padding">
-			<a id="productLocation" class="gray-color font-16 no-text-decoration padding-5" href="products.html"> Product  | </a>
+	<div class="container padding-10 border-bottom">
+			<form action="/action_page.php">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="firstname" placeholder="Your name..">
+				
+				<label for="email">Email</label>
+				<input type="text" id="email" name="email" placeholder="Your email..">
+				
+				<label for="subject">Message</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+				
+				<input type="submit" class="md-button" value="Send">
 		</div>
-	</section>
-
-	<div id="productName"></div>
-	<div id="product" class="flex layout-row table border-bottom">
-		<div class="flex-50 layout-column padding-5 no-left-padding table-cell">
-			<div id="productImage">
-			</div>
-			<div id="productImages" class= "flex layout-row table no-left-padding">
-			</div>
-		</div>
-		<div class="flex-50 layout-column no-padding table-cell">
-			<div id="productDescription" class= "padding-10">
-			</div>
-		</div>
+			</form>
 	</div>
-	
-	<section id="followUs">
-		<div class="container border-bottom text-center">
-			<h1>FollowUs on ......</h1>
-		</div>
-	</section>
+
 
 	<footer>  
+		<section id="followUs">
+			<div class="container border-bottom text-center">
+				<h1>FollowUs on ......</h1>
+			</div>
+		</section>
+
 		<p class="container text-center"> Salt and mint, Copyright &copy; 2018 </p>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/productDescriptionJQuery.js"></script>
 	<script src="js/javascript.js"></script>
 
 </body>
