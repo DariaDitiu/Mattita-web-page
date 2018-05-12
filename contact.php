@@ -93,7 +93,6 @@
 				<input type="checkbox" id="show-menu" role="button">
 				<ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
 					<li class="inline-block align-left">
-<<<<<<< HEAD
 						<a class="menu-text gray-color inline-block text-center menu-container" href="index.html">Home</a>
 						<a class="brown-color demi-bold menu-text inline-block text-center menu-container" href="index.html">Home</a>
 					</li>
