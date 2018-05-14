@@ -82,12 +82,19 @@
 			<img id = "logo" class="flex layout-column width-50 align-center auto-margin" src="./images/logo.png">
 		</div>
 		<div class="relative-position">
+<<<<<<< HEAD
+=======
+
+>>>>>>> fbd6377c3eae975001d8bc38fa4e669f91c2a705
 			<nav class="margin-top-10">
 				<label for="show-menu" class="show-menu menu-text">Show Menu</label>
 				<input type="checkbox" id="show-menu" role="button">
 				<ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
 					<li class="inline-block align-left">
 						<a class="menu-text gray-color inline-block text-center menu-container" href="index.html">Home</a>
+<<<<<<< HEAD
+=======
+>>>>>>> fbd6377c3eae975001d8bc38fa4e669f91c2a705
 					</li>
 					<li class="inline-block align-left">
 						<a class="menu-text gray-color inline-block text-center menu-container" href="products.html">Products</a>
@@ -108,6 +115,9 @@
 			</div>
 	</header>
 
+<<<<<<< HEAD
+=======
+>>>>>>> fbd6377c3eae975001d8bc38fa4e669f91c2a705
 					
 	<div class="border-bottom">
 		<div class="contact-container padding-10 width-75">
