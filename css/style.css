@@ -80,10 +80,22 @@ header a{
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 
 	display: table;
+
+	touch-action: manipulation;
+    cursor: pointer;
 }
 
 .md-button:hover{
 	color: #d2b08d;
+}
+
+.icon{
+	font-size: 25px;
+	color: #000;
+}
+
+.icon:hover{
+	color: #c28f52;
 }
 
 .no-border{
@@ -118,7 +130,7 @@ header a{
 
 .align-justify{
 	line-height: 1.5;
-    text-align: justify;
+	text-align: justify;
 }
 
 .layout-column{
@@ -160,9 +172,18 @@ header a{
 	padding: 10px;
 }
 
+.padding-left-right-30{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .padding-top-bottom-10{
 	padding-bottom: 10px;
 	padding-top: 10px;
+}
+
+.padding-top-11{
+	padding-top: 11.4px;
 }
 
 .padding-left-15{
@@ -190,6 +211,7 @@ header a{
 	flex-shrink: 1;
 	flex-basis: 0%;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 .flex-33{
@@ -210,6 +232,24 @@ header a{
 	box-sizing: border-box;
 }
 
+.flex-43{
+	max-height: 100%;
+	max-width: 43%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;	
+	box-sizing: border-box;
+}
+
+.flex-10{
+	max-height: 100%;
+	max-width: 10%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;	
+	box-sizing: border-box;
+}
+
 .relative-position{
 	position: relative;
 }
@@ -220,7 +260,10 @@ header a{
 
 .width-50{
 	width: 50%; 
-	height: 85%;
+}
+
+.width-75{
+	width: 75%; 
 }
 
 .font-13{
@@ -229,6 +272,10 @@ header a{
 
 .font-16{
 	font-size: 16px;
+}
+
+.font-25{
+	font-size: 25px;
 }
 
 .max-width-100{
@@ -257,6 +304,57 @@ p{
 	overflow:hidden;
 }
 
+.shadow-box{
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.contact-container{
+	display: table;
+  	margin: 0 auto;
+}
+
+.message-height{
+	height:170px;
+}
+
+.error-text{
+	padding: 10px;
+	color: #ff0000;
+	font-size: 18px;
+
+}
+
+.success{
+	padding: 10px;
+	font-size: 16px;
+}
+
+.float-left{
+	float: left;
+}
+
+.no-flex-wrap{
+	flex-wrap: nowrap;
+}
+
+/* override bootstrap*/
+.table .table{
+	background-color: transparent;
+}
+
+#search-text{
+	border: none;
+	background: transparent;
+}
+
+#search-text:focus{
+	outline: #f4f4f4;
+}
+
+.icon-container{
+	padding: 6px 12px 6px 12px;
+}
+
 /*Hide checkbox*/
 input[type=checkbox]{
 	display: none;
@@ -266,6 +364,17 @@ input[type=checkbox]:checked ~ #menu{
 	display: block;
 }
 
+input[type=text], select, textarea {
+	width: 100%; 
+	padding: 12px;  
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical 
+}
+
 @media all and (max-width : 760px){
 
 	body{
@@ -273,7 +382,7 @@ input[type=checkbox]:checked ~ #menu{
 		margin-right: 2%;
 	}
 
-	header ul {
+	ul#menu {
 		position: absolute;
 		display: none;
 		left: 0;
@@ -312,8 +421,10 @@ input[type=checkbox]:checked ~ #menu{
 	.flex-33{
 		max-width: 100%;
 	}
-	.flex-60{
-		max-width: 100%;
+
+	.icon{
+		font-size: 20px;
+		padding: 0 0 0 0;
 	}
 }
 
@@ -327,19 +438,29 @@ input[type=checkbox]:checked ~ #menu{
 	.flex-33{
 		max-width: 50%;
 	}
-	.flex-60{
-		max-width: 50%;
+}
+
+@media all and (max-width: 1600px) and (min-width: 1000px){
+
+	h1{
+		font-size: 30px;
 	}
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+@media all and (min-width: 1600px) {
+
+	.menu-text{
+		font-size: 36px;
+	}
+
+	.menu-container{
+		line-height: 50px;
+		min-width:250px;
+		height: 50px;
+	}
+
+	.cart-icon{
+		font-size: 36px;
+		padding: 0 0 0 0;
+	}
 }
