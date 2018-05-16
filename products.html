@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Conceptul salt & mint este acela de a .....">
-	<meta name="keywords" content="salt, mint">
-	<meta name="author" content="Salt and mint">
-	<title>Salt and Mint | Products </title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<!--[if IE 9]>
-	<link rel="stylesheet" type="text/css" href="./css/ie9specific.css" />
-<![endif]-->
-
-
-</head>
-<body onload="readProductInformation()" onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
-	<header class="text-center border-bottom">
-		<div class="container">
-			<img id = "logo" class="flex layout-column width-50 align-center auto-margin" src="./images/logo.png">
-		</div>
-
-		<div class="container">
-			<nav class="margin-top-10">
-				<label for="show-menu" class="show-menu menu-text">Show Menu</label>
-				<input type="checkbox" id="show-menu" role="button">
-				<ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
-					<li class="inline-block align-left">
-						<a class="menu-text gray-color inline-block text-center menu-container" href="index.html">Home</a>
-					</li>
-					<li class="inline-block align-left">
-						<a class="brown-color demi-bold menu-text inline-block text-center menu-container" href="products.html">Products</a>
-					</li>
-					<li class="inline-block align-left">
-						<a class="menu-text gray-color inline-block text-center menu-container" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		
-	</header>
-
-	<section>
-		<img id="products-type" class="width-100 no-border" src="./images/main oil.jpg">
-	</section>
-
-	<section>
-		<div class="container border-bottom">
-			<nav>
-				<ul class="no-margin-top-bottom list-style-type text-center">
-					<li class="inline-block align-left">
-						<a id = "oilProducts" class="brown-color demi-bold inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main oil.jpg", "oil"); return false;'>Oils</a>
-					</li>
-					<li class="inline-block align-left">
-						<a id = "scrubProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main scrub.jpg", "scrub"); return false;'>Scrub</a>
-					</li>
-					<li class="inline-block align-left">
-						<a id = "cosmeticsProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main cosmetics.jpg", "cosmetics"); return false;'>Cosmetics</a>
-					</li>
-					<li class="inline-block align-left">
-						<a id="foodProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main food.jpg", "food"); return false;'>Food</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</section>
-	<div id="allProductsType" class="flex layout-row table border-bottom">
-	</div>
-	<section>
-		
-	</section>
-
-	<section id="followUs">
-		<div class="container border-bottom text-center">
-			<h1>FollowUs on ......</h1>
-		</div>
-	</section>
-
-	<footer>  
-		<p class="container text-center"> Salt and mint, Copyright &copy; 2018 </p>
-	</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.js"></script>
-	<script src="js/javascript.js"></script>
-	
-
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Conceptul salt & mint este acela de a .....">
+      <meta name="keywords" content="salt, mint">
+      <meta name="author" content="Salt and mint">
+      <title>Salt and Mint | Welcome </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <!--[if IE 9]>
+      <link rel="stylesheet" type="text/css" href="./css/ie9specific.css" />
+      <![endif]-->
+   </head>
+   <body onload="readProductInformation()" onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
+      <header class="text-center border-bottom margin-top-10">
+         <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
+            <div class="flex-80 table-cell no-margin">
+               <div class="flex layout-row no-flex-wrap table no-margin">
+                  <a class="icon-container" href="search-result.html">
+                  <span class="glyphicon glyphicon-search icon"></span>
+                  </a>	
+                  <input id="search-text" type="text" name="search" placeholder="Type here to search">
+               </div>
+            </div>
+            <div class="flex-10 table-cell">
+               <div class="icon-container">
+                  <span class="glyphicon glyphicon glyphicon-globe icon"></span>
+               </div>
+            </div>
+            <div class="flex-10 table-cell">
+               <div class="icon-container">
+                  <a href="shopping-cart.php">
+                  <span class="glyphicon glyphicon-shopping-cart icon"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div id = "logo-container" class="flex table layout-row padding-top-bottom-10 no-margin">
+            <img id = "logo" class="width-25 align-center auto-margin" src="./images/new logo.png">
+         </div>
+         <nav class="margin-top-10 light-brown-bkgd">
+            <label for="show-menu" class="show-menu menu-text">Show Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
+               <li class="inline-block align-left">
+                  <a class="menu-text gray-color inline-block text-center menu-container" href="index.html">Home</a>
+               </li>
+               <li class="inline-block align-left">
+                  <a class="brown-color demi-bold menu-text inline-block text-center menu-container" href="products.html">Products</a>
+               </li>
+               <li class="inline-block align-left">
+                  <a class="menu-text gray-color inline-block text-center menu-container" href="contact.php">Contact</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <section>
+         <img id="products-type" class="width-100 no-border" src="./images/main oil.jpg">
+      </section>
+      <section>
+         <div class="container border-bottom">
+            <nav>
+               <ul class="no-margin-top-bottom list-style-type text-center">
+                  <li class="inline-block align-left">
+                     <a id = "oilProducts" class="brown-color demi-bold inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main oil.jpg", "oil"); return false;'>Oils</a>
+                  </li>
+                  <li class="inline-block align-left">
+                     <a id = "scrubProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main scrub.jpg", "scrub"); return false;'>Scrub</a>
+                  </li>
+                  <li class="inline-block align-left">
+                     <a id = "cosmeticsProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main cosmetics.jpg", "cosmetics"); return false;'>Cosmetics</a>
+                  </li>
+                  <li class="inline-block align-left">
+                     <a id="foodProducts" class="gray-color inline-block text-center menu-container font-16 no-text-decoration" href="#" onclick='changeProduct("./images/main food.jpg", "food"); return false;'>Food</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </section>
+      <div id="allProductsType" class="flex layout-row table border-bottom">
+      </div>
+      <section>
+      </section>
+      <section id="followUs">
+         <div class="container border-bottom text-center">
+            <h1>FollowUs on ......</h1>
+         </div>
+      </section>
+      <footer>
+         <p class="container text-center"> Salt and mint, Copyright &copy; 2018 </p>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/javascript.js"></script>
+   </body>
 </html>
