@@ -6,28 +6,14 @@
    $mail            = new PHPMailer;
    $mailTo          = 'dariaboom@gmail.com';
    
-   $mail->isSMTP(); 								// Set mailer to use SMTP
-   $mail->Host       = 'smtp.gmail.com'; 			// Specify main and backup server
-   $mail->SMTPAuth   = true; 						// Enable SMTP authentication
-   $mail->Username   = $mailTo;                 	// SMTP username
-   $mail->Password   = 'S_o_n_g_o_c_u-12&28&87'; 	// SMTP password
-   $mail->SMTPSecure = 'ssl'; 						// Enable encryption, 'tsl' also accepted
-   $mail->Port       = 465; 						//Set the SMTP port number - 587 for authenticated TLS
    
    $mail->SMTPOptions = array(
-   	'ssl' => array(
-   	'verify_peer' => false,
-   	'verify_peer_name' => false,
-   	'allow_self_signed' => true
        )
    );
    
    $msg = $success = $name = $visitor_email = $message = $email_subject = $email_body = '';
    
    if(filter_has_var(INPUT_POST, 'submit')){
-   	$name          = htmlspecialchars($_POST['name']);
-   	$visitor_email = htmlspecialchars($_POST ['email']);
-   	$message       = htmlspecialchars($_POST ['message']);
    
    	if(empty($visitor_email) || empty($name) || empty($message)){
    		$msg =  'Please fill in all fields.';
@@ -45,9 +31,27 @@
    				$mail->addAddress($mailTo, 'Salt and Mint');  // to whom the mail will be sent (mail address of the site)
    					
    			$mail->isHTML(true);
+      if(empty($visitor_email) || empty($name) || empty($message)){
+         $msg =  'Please fill in all fields.';
+      }else{
+         if(filter_var($visitor_email, FILTER_VALIDATE_EMAIL) === false){
+            $msg = 'Please use a valid email.';
+         }else{
+            $email_subject = 'Contact Request Form';
+            $email_body = '<h2>Contact Request</h2>
+                        <h4>Name</h4><p>'.$name.'</p>
+                        <h4>Email</h4><p>'.$visitor_email.'</p>
+                        <h4>Message</h4><p>'.$message.'</p>';
+            
+               $mail->setFrom($visitor_email, $name);     //Set from whom the email is received
+               $mail->addAddress($mailTo, 'Salt and Mint');  // to whom the mail will be sent (mail address of the site)
+                  
+            $mail->isHTML(true);
    
    			$mail->Subject = $email_subject;
    			$mail->Body    = $email_body;
+            $mail->Subject = $email_subject;
+            $mail->Body    = $email_body;
    
    			if (!$mail->send()) {
    				$msg = 'Message could not be sent.';
@@ -57,6 +61,14 @@
    			}					
    		}
    	}
+            if (!$mail->send()) {
+               $msg = 'Message could not be sent.';
+            }else{
+               $success = 'Your email has been sent';
+               $name = $visitor_email = $message = $email_subject = $email_body = '';
+            }              
+         }
+      }
    }
    ?>
 <!DOCTYPE html>
@@ -82,6 +94,7 @@
                   <a class="icon-container" href="search-result.html">
                   <span class="glyphicon glyphicon-search icon"></span>
                   </a>	
+                  </a>  
                   <input id="search-text" type="text" name="search" placeholder="Type here to search">
                </div>
             </div>

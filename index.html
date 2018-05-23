@@ -13,20 +13,23 @@
       <!--[if IE 9]>
       <link rel="stylesheet" type="text/css" href="./css/ie9specific.css" />
       <![endif]-->	
+      <![endif]-->
    </head>
    <body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
       <header class="text-center border-bottom margin-top-10">
-         
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
          	<div class="flex-80 table-cell no-margin">
+            <div class="flex-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
                   <a class="icon-container" href="search-result.html">
                   <span class="glyphicon glyphicon-search icon"></span>
                   </a>	
+                  </a>  
                   <input id="search-text" type="text" name="search" placeholder="Type here to search">
                </div>
             </div>
            	 <div class="flex-10 table-cell">
+            <div class="flex-10 table-cell">
                <div class="icon-container">
                   <span class="glyphicon glyphicon glyphicon-globe icon"></span>
                </div>
@@ -42,9 +45,11 @@
          
          <div id = "logo-container" class="flex table layout-row padding-top-bottom-10 no-margin">
                <img id = "logo" class="width-25 align-center auto-margin" src="./images/new logo.png">
+            <img id = "logo" class="width-25 align-center auto-margin" src="./images/new logo.png">
          </div>
 
         <nav class="margin-top-10 light-brown-bkgd">
+         <nav class="margin-top-10 light-brown-bkgd">
             <label for="show-menu" class="show-menu menu-text">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
@@ -66,6 +71,7 @@
       <section>
          <h2 class="text-center padding-10">Recommended Products</h2>
           <div id="recommendedProducts" class="flex layout-row table no-margin">
+         <div id="recommendedProducts" class="flex layout-row table no-margin">
          </div>
          <div class="flex layout-row align-center max-width-100 table margin-bottom-10 margin-top-30">
             <a class="btn btn-primary table-cell" href='products.html'>View all products</a>
@@ -90,7 +96,15 @@
                      <img class="fa-icon" src="./images/F_icon.svg"></img>
                   </a>
                </div>
+         <h2>Follow Us</h2>
+         <div class="flex layout-row table align-center padding-top-bottom-10 no-margin border-bottom">
+         <div class="flex-10 table-cell">
+            <div class="icon-container">
+               <a href="https://www.facebook.com/pg/MatittaKayu">
+               <img class="fa-icon" src="./images/F_icon.svg"></img>
+               </a>
             </div>
+         </div>
       </section>
       
       <footer>
