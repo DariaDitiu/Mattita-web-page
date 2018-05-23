@@ -7,7 +7,9 @@
 		"price": "150 RON",
 		"dimensions": "150ml",
 		"image": "./images/salt Oil.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "true"
 	},
 	{
 		"type": "oil",
@@ -18,7 +20,9 @@
 		"price": "123 RON",
 		"dimensions": "150ml",
 		"image": "./images/Essential Oil Crystal.jpg",
-		"imageDetailed": ["./images/Green Tea Essential Oil Crystal spa front.jpg", "./images/Green Tea Essential Oil Crystal spa left.jpg", "./images/Green Tea Essential Oil Crystal spa rear.jpg", "./images/Green Tea Essential Oil Crystal spa front.jpg"]
+		"imageDetailed": ["./images/Green Tea Essential Oil Crystal spa front.jpg", "./images/Green Tea Essential Oil Crystal spa left.jpg", "./images/Green Tea Essential Oil Crystal spa rear.jpg", "./images/Green Tea Essential Oil Crystal spa front.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "oil",
@@ -29,7 +33,9 @@
 		"price": "258 RON",
 		"dimensions": "200ml",
 		"image": "./images/Green-Tea Essential Oil.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "true"
 	},
 	{
 		"type": "scrub",
@@ -40,7 +46,9 @@
 		"price": "135 RON",
 		"dimensions": "150ml",
 		"image": "./images/salt food.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "scrub",
@@ -51,7 +59,9 @@
 		"price": "123 RON",
 		"dimensions": "20x30x40",
 		"image": "./images/Green Tea Essential Oil Crystal.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "scrub",
@@ -62,7 +72,9 @@
 		"price": "258 RON",
 		"dimensions": "20x30x40",
 		"image": "./images/Green Tea Essential Oil Crystal spa.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "true"
 	},
 	{
 		"type": "scrub",
@@ -73,7 +85,9 @@
 		"price": "123 RON",
 		"dimensions": "20x30x40",
 		"image": "./images/Mint-Salt scrub.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "scrub",
@@ -84,7 +98,9 @@
 		"price": "258 RON",
 		"dimensions": "20x30x40",
 		"image": "./images/Mint-Bath-Salt scrub.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "cosmetics",
@@ -95,7 +111,9 @@
 		"price": "123 RON",
 		"dimensions": "20x30x40",
 		"image": "./images/soap.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "cosmetics",
@@ -106,7 +124,9 @@
 		"price": "258 RON",
 		"dimensions": "400ml",
 		"image": "./images/shampoo.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "cosmetics",
@@ -117,7 +137,9 @@
 		"price": "123 RON",
 		"dimensions": "40ml",
 		"image": "./images/polish nail.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "cosmetics",
@@ -128,7 +150,9 @@
 		"price": "258 RON",
 		"dimensions": "400ml",
 		"image": "./images/body lotion.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "food",
@@ -139,7 +163,9 @@
 		"price": "123 RON",
 		"dimensions": "400g",
 		"image": "./images/salt food.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "food",
@@ -150,6 +176,8 @@
 		"price": "258 RON",
 		"dimensions": "30g",
 		"image": "./images/mint tea.jpg",
-		"imageDetailed": ["./images/salt Oil rear.jpg"]
+		"imageDetailed": ["./images/salt Oil rear.jpg"],
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	}
 ]

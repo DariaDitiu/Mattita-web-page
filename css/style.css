@@ -8,12 +8,6 @@ body{
 	background-color: #f4f4f4;
 }
 
-.container{
-	width: 100%;
-	margin: auto;
-	overflow: hidden;
-}
-
 .border-bottom{
 	border-bottom: #dacdbc  3px solid;
 	margin-bottom: 2px;
@@ -46,10 +40,6 @@ header a{
 	display: none;
 }
 
-.margin-top-10{
-	margin-top: 10px;
-}
-
 .dark-grayish-blue{
 	color:#2a2c38;	
 }
@@ -58,32 +48,49 @@ header a{
 	color: #c28f52;
 }
 
+.light-brown-bkgd{
+	background-color: #f4f0ef;
+}
+
 .gray-color{
 	color: #030303;
 }
 
-.md-button {
-	background-color: #616161;
-	color: #ffffff;
-	text-transform: none;
-	text-decoration: none;
-
-	border: 0;
-	padding: 0 8px;
-	margin: 6px 8px;
-
-	line-height: 36px;
-	font-size: 14px;
-	letter-spacing: .01em;
-
-	border-radius: 2px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-
-	display: table;
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #498eca;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #396c98;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #396c98;
+    box-shadow: none;
 }
 
-.md-button:hover{
-	color: #d2b08d;
+.icon{
+	font-size: 20px;
+	color: #000;
+}
+
+.icon:hover{
+	color: #c28f52;
 }
 
 .no-border{
@@ -118,25 +125,15 @@ header a{
 
 .align-justify{
 	line-height: 1.5;
-    text-align: justify;
+	text-align: justify;
 }
 
-.layout-column{
-	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-	display: -ms-flexbox;      /* TWEENER - IE 10 */
-	display: -webkit-flex;     /* NEW - Chrome */
-	flex-direction: column;
+.align-flex-end{
+	justify-content: flex-end;
 }
 
-.layout-row{
-	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-	display: -ms-flexbox;      /* TWEENER - IE 10 */
-	display: -webkit-flex;     /* NEW - Chrome */
-	flex-direction: row;
+.align-flex-start{
+	align-self: flex-start;
 }
 
 .no-margin{
@@ -152,6 +149,18 @@ header a{
 	margin-bottom: 0;
 }
 
+.margin-top-10{
+	margin-top: 10px;
+}
+
+.margin-top-30{
+	margin-top: 30px;
+}
+
+.margin-bottom-10{
+	margin-bottom: 10px;
+}
+
 .light-text{
 	font-weight: 300;
 }
@@ -160,8 +169,17 @@ header a{
 	padding: 10px;
 }
 
+.padding-left-right-30{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .padding-top-bottom-10{
 	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.padding-top-10{
 	padding-top: 10px;
 }
 
@@ -190,6 +208,43 @@ header a{
 	flex-shrink: 1;
 	flex-basis: 0%;
 	flex-wrap: wrap;
+	align-items: center;
+}
+
+.layout-column{
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	flex-direction: column;
+}
+
+.layout-row{
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	flex-direction: row;
+}
+
+.flex-50{
+	max-height: 100%;
+	max-width: 50%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;	
+	box-sizing: border-box;
+}
+
+.flex-80{
+	max-height: 100%;
+	max-width: 80%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;	
+	box-sizing: border-box;
 }
 
 .flex-33{
@@ -201,9 +256,9 @@ header a{
 	box-sizing: border-box;
 }
 
-.flex-50{
+.flex-10{
 	max-height: 100%;
-	max-width: 50%;
+	max-width: 10%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;	
@@ -218,9 +273,12 @@ header a{
 	width: 100%; 
 }
 
-.width-50{
-	width: 50%; 
-	height: 85%;
+.width-25{
+	width: 25%; 
+}
+
+.width-75{
+	width: 75%; 
 }
 
 .font-13{
@@ -231,8 +289,16 @@ header a{
 	font-size: 16px;
 }
 
+.font-25{
+	font-size: 25px;
+}
+
 .max-width-100{
 	max-width: 100%;
+}
+
+.min-width-100{
+	min-width:100px;
 }
 
 .line-height-1{
@@ -252,9 +318,86 @@ p{
 }
 
 .image-container{
-	width:100%;
-	height:70vh;
-	overflow:hidden;
+	width: 100%;
+	height: 43vh;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.shadow-box{
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.contact-container{
+	display: table;
+  	margin: 0 auto;
+}
+
+.message-height{
+	height:170px;
+}
+
+.error-text{
+	padding: 10px;
+	color: #ff0000;
+	font-size: 18px;
+}
+
+.success{
+	padding: 10px;
+	font-size: 16px;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.no-flex-wrap{
+	flex-wrap: nowrap;
+}
+
+/* override bootstrap*/
+.table .table{
+	background-color: transparent;
+}
+
+#search-text{
+	border: none;
+	background: transparent;
+	margin-bottom: 0;
+	margin-left: 10px;
+	font-size: 20px;
+	padding: 0;
+}
+
+#search-text:focus{
+	outline: #f4f4f4;
+}
+
+.icon-container{
+	padding: 6px 12px 6px 12px;
+}
+
+.type-button{
+	color:#030303;
+	font-weight: normal;
+	background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.type-button:focus{
+	color:#c28f52;
+	font-weight: 700;
+}
+
+.fa-icon{
+	height: 30px
 }
 
 /*Hide checkbox*/
@@ -266,6 +409,17 @@ input[type=checkbox]:checked ~ #menu{
 	display: block;
 }
 
+input[type=text], select, textarea {
+	width: 100%; 
+	padding: 12px;  
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical 
+}
+
 @media all and (max-width : 760px){
 
 	body{
@@ -273,7 +427,7 @@ input[type=checkbox]:checked ~ #menu{
 		margin-right: 2%;
 	}
 
-	header ul {
+	ul#menu {
 		position: absolute;
 		display: none;
 		left: 0;
@@ -285,14 +439,6 @@ input[type=checkbox]:checked ~ #menu{
 		width: 100%;
 	}
 
-	#logo{
-		width: 100%; 
-	}
-
-	h1{
-		font-size: 16px;
-	}
-
 	p{
 		font-size: 11px;
 	}
@@ -301,19 +447,51 @@ input[type=checkbox]:checked ~ #menu{
 		font-size: 11px;
 	}
 
+	h2{
+		font-size: 18px;
+	}
+
 	.menu-text{
 		font-size: 16px;
 	}
 
 	.show-menu {
 		display:block;
+		margin:0;
+		padding-top: 10px;
 	}
 
 	.flex-33{
 		max-width: 100%;
 	}
-	.flex-60{
-		max-width: 100%;
+
+	.flex-43{
+		max-width: 34%;
+	}
+
+	.icon{
+		font-size: 15px;
+		padding-top: 8px;
+	}
+
+	.icon-container{
+		padding: 0;
+	}
+
+	#search-text{
+		font-size: 15px;
+	}
+
+	.image-container{
+		height: 25vh;
+	}
+
+	.fa-icon{
+		height: 15px
+	}
+
+	.type-button{
+		font-size: 15px;
 	}
 }
 
@@ -327,19 +505,49 @@ input[type=checkbox]:checked ~ #menu{
 	.flex-33{
 		max-width: 50%;
 	}
-	.flex-60{
-		max-width: 50%;
+
+	#search-text{
+		font-size: 18px;
 	}
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+@media all and (min-width: 1400px) {
+
+	.menu-text{
+		font-size: 27px;
+	}
+
+	.menu-container{
+		line-height: 50px;
+		min-width:250px;
+		height: 50px;
+	}
+
+	.icon{
+		font-size: 25px;
+	}
+
+	#search-text{
+		font-size: 25px;
+	}
+
+	p{
+		font-size: 20px;
+	}
+
+	.type-button{
+		font-size: 22px;
+	}
+
+	#recommendedProducts a{
+		font-size: 22px;
+	}
+
+	.fa-icon{
+		height: 41px;
+	}
+
+	.min-width-100{
+		min-width:150px;
+	}
 }
