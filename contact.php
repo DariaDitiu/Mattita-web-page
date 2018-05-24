@@ -75,7 +75,6 @@
       <![endif]-->
    </head>
    <body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
-      <header class="text-center border-bottom margin-top-10">
       <header class="align-center border-bottom margin-top-10">
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
             <div class="flex-80 table-cell no-margin">
@@ -107,15 +106,12 @@
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
                <li class="inline-block align-left">
-                  <a class="menu-text gray-color inline-block text-center menu-container" href="index.html">Home</a>
                   <a class="menu-text gray-color inline-block align-center menu-container" href="index.html">Home</a>
                </li>
                <li class="inline-block align-left">
-                  <a class="menu-text gray-color inline-block text-center menu-container" href="products.html">Products</a>
                   <a class="menu-text gray-color inline-block align-center menu-container" href="products.html">Products</a>
                </li>
                <li class="inline-block align-left">
-                  <a class="brown-color demi-bold menu-text inline-block text-center menu-container" href="contact.php">Contact</a>
                   <a class="brown-color demi-bold menu-text inline-block align-center menu-container" href="contact.php">Contact</a>
                </li>
             </ul>
@@ -133,18 +129,15 @@
                <textarea id="message" name="message" placeholder="Write something.." class="demi-bold no-margin message-height" required><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
                <input type="submit" name="submit" class="md-button padding-left-right-30" value="Send">
             </form>
-            <span class="success"><?= $success ?></span>
             <span class="success-text"><?= $success ?></span>
          </div>
       </div>
       <footer>
          <section id="followUs">
-            <div class="container border-bottom text-center">
             <div class="container border-bottom align-center">
                <h1>FollowUs on ......</h1>
             </div>
          </section>
-         <p class="container text-center"> Salt and mint, Copyright &copy; 2018 </p>
          <p class="container align-center"> Salt and mint, Copyright &copy; 2018 </p>
       </footer>
       <script src="js/javascript.js"></script>

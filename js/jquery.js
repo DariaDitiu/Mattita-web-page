@@ -42,7 +42,6 @@ function createNewCollectionSection(newCollection){
     changeProductsPhoto(newCollection[index].image);
     $("#" + newCollection[index].type).focus();
     
-    fillProductsInformation(newCollection, newCollection[index].type, "allProductsType");
     fillProductInformation(newCollection, newCollection[index].type, "allProductsType");
     localStorage.setItem("newCollection", "false");
 } 
@@ -114,7 +113,6 @@ function fillProductInformation(products, productType, idDIV) {
                 'src': '' + products[i].image + ''
             }).appendTo('#' + id3 + '');
             $('<div/>', {
-                'class': 'text-center layout-column flex ruby-text-container padding-5',
                 'class': 'align-center layout-column flex ruby-text-container padding-5',
                 'id': id4
             }).appendTo('#' + id2 + '');
@@ -128,7 +126,6 @@ function fillProductInformation(products, productType, idDIV) {
                     }
                 }
             }).appendTo('#' + id4 + '');
-            $('<p/>', {
             $('<h4/>', {
                 'class': 'demi-bold no-margin',
                 text: '' + products[i].price + ''
