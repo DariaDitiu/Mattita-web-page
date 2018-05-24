@@ -1,36 +1,46 @@
 body{
+body {
 	font-family: Georgia, Helvelica, sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 0px;
 	margin-left:  18%;
 	margin-right: 18%;
+	margin-left: 2%;
+	margin-right: 2%;
 	background-color: #f4f4f4;
 }
 
 .border-bottom{
 	border-bottom: #dacdbc  3px solid;
+.border-bottom {
+	border-bottom: #dacdbc 3px solid;
 	margin-bottom: 2px;
 }
 
 header a:hover{
 	color:#2a2c38;
+header a:hover {
+	color: #2a2c38;
 	font-weight: 700;
 }
 
 header a{
+header a {
 	line-height: 0;
 }
 
 .menu-text{
+.menu-text {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 20px;
 }
 
 .menu-container{
+.menu-container {
 	line-height: 50px;
-	min-width:140px;
+	min-width: 140px;
 	height: 50px;
 }
 
@@ -45,14 +55,18 @@ header a{
 }
 
 .brown-color{
+.brown-color {
 	color: #c28f52;
 }
 
 .light-brown-bkgd{
 	background-color: #f4f0ef;
+.light-brown-bkgd {
+	background-color: #f8efed;
 }
 
 .gray-color{
+.gray-color {
 	color: #030303;
 }
 
@@ -70,45 +84,119 @@ header a{
     outline: 0 none;
 }
  
+	padding: 14px 24px;
+	border: 0 none;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-family: Oswald;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+	outline: 0 none;
+}
+
 .btn-primary {
     background: #498eca;
     color: #ffffff;
+	background: #498eca;
+	color: #ffffff;
 }
  
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background: #396c98;
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+	background: #396c98;
 }
  
 .btn-primary:active, .btn-primary.active {
     background: #396c98;
     box-shadow: none;
+
+.btn-primary:active,
+.btn-primary.active {
+	box-shadow: none;
 }
 
 .icon{
+.icon {
 	font-size: 20px;
 	color: #000;
 }
 
 .icon:hover{
+.icon:hover {
 	color: #c28f52;
 }
 
 .no-border{
+.icon-container {
+	padding: 6px 12px 6px 12px;
+}
+
+#search-text {
+	border: none;
+	background: transparent;
+	margin-bottom: 0;
+	margin-left: 10px;
+	font-size: 20px;
+	padding: 0;
+}
+
+#search-text:focus {
+	outline: #f4f4f4;
+}
+
+.type-button {
+	color: #030303;
+	font-weight: normal;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+.type-button:hover,
+.type-button:focus,
+.type-button:active,
+.type-button.active,
+.open>.dropdown-toggle.type-button {
+	color: #c28f52;
+	font-weight: 700;
+}
+
+.fa-icon {
+	height: 30px
+}
+
+.no-border {
 	border: 0px;
 }
 
 .demi-bold{
+.demi-bold {
 	font-weight: 700;
 }
 
 .text-center{
 	text-align: center;
+.light-text {
+	font-weight: 300;
 }
 
 .align-center{
+.align-center {
 	align-items: center;
 	align-content: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .inline-block{
@@ -116,56 +204,77 @@ header a{
 }
 
 .align-left{
+.align-left {
 	text-align: left;
 }
 
 .align-right{
+.align-right {
 	text-align: right;
 }
 
 .align-justify{
+.align-justify {
 	line-height: 1.5;
 	text-align: justify;
 }
 
 .align-flex-end{
+.align-flex-end {
 	justify-content: flex-end;
 }
 
 .align-flex-start{
+.align-flex-start {
 	align-self: flex-start;
 }
 
 .no-margin{
 	margin: 0;
+.inline-block {
+	display: inline-block;
 }
 
 .auto-margin{
 	margin: auto;
+.no-margin {
+	margin: 0;
 }
 
 .no-margin-top-bottom{
+.no-margin-top-bottom {
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 .margin-top-10{
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.margin-top-10 {
 	margin-top: 10px;
 }
 
 .margin-top-30{
+.margin-top-30 {
 	margin-top: 30px;
 }
 
 .margin-bottom-10{
 	margin-bottom: 10px;
+.auto-margin {
+	margin: auto;
 }
 
 .light-text{
 	font-weight: 300;
+.padding-5 {
+	padding: 5px;
 }
 
 .padding-10{
+.padding-10 {
 	padding: 10px;
 }
 
@@ -175,35 +284,45 @@ header a{
 }
 
 .padding-top-bottom-10{
+.padding-top-bottom-10 {
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
 
 .padding-top-10{
+.padding-top-10 {
 	padding-top: 10px;
 }
 
 .padding-left-15{
+.padding-left-15 {
 	padding-left: 15px;
 }
 
 .padding-5{
 	padding: 5px;
+.padding-left-right-30 {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .no-left-padding{
+.no-left-padding {
 	padding-left: 0;
 }
 
 .no-right-padding{
+.no-right-padding {
 	padding-right: 0;
 }
 
 .no-padding{
+.no-padding {
 	padding: 0;
 }
 
 .flex{
+.flex {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0%;
@@ -217,6 +336,12 @@ header a{
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
 	display: -webkit-flex;     /* NEW - Chrome */
+.layout-column {
+	display: flex;	        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;	    /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;	/* TWEENER - IE 10 */
+	display: -webkit-flex;	/* NEW - Chrome */
 	flex-direction: column;
 }
 
@@ -226,46 +351,61 @@ header a{
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
 	display: -webkit-flex;     /* NEW - Chrome */
+.layout-row {
+	display: flex;	        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;	    /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;	/* TWEENER - IE 10 */
+	display: -webkit-flex;	/* NEW - Chrome */
 	flex-direction: row;
 }
 
 .flex-50{
+.flex-50 {
 	max-height: 100%;
 	max-width: 50%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;	
+	flex-basis: 100%;
 	box-sizing: border-box;
 }
 
 .flex-80{
+.flex-80 {
 	max-height: 100%;
 	max-width: 80%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;	
+	flex-basis: 100%;
 	box-sizing: border-box;
 }
 
 .flex-33{
+.flex-33 {
 	max-height: 100%;
 	max-width: 33.33%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;	
+	flex-basis: 100%;
 	box-sizing: border-box;
 }
 
 .flex-10{
+.flex-10 {
 	max-height: 100%;
 	max-width: 10%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;	
+	flex-basis: 100%;
 	box-sizing: border-box;
 }
 
 .relative-position{
+.relative-position {
 	position: relative;
 }
 
@@ -275,17 +415,24 @@ header a{
 
 .width-25{
 	width: 25%; 
+.width-100 {
+	width: 100%;
 }
 
 .width-75{
 	width: 75%; 
+.width-25 {
+	width: 25%;
 }
 
 .font-13{
 	font-size: 13px;
+.width-75 {
+	width: 75%;
 }
 
 .font-16{
+.font-16 {
 	font-size: 16px;
 }
 
@@ -294,30 +441,43 @@ header a{
 }
 
 .max-width-100{
+.max-width-100 {
 	max-width: 100%;
 }
 
 .min-width-100{
 	min-width:100px;
+.min-width-100 {
+	min-width: 100px;
 }
 
 .line-height-1{
+.line-height-1 {
 	line-height: 1.1;
 }
 
 .list-style-type{
 	list-style-type:none;
+.list-style-type {
+	list-style-type: none;
 }
 
 p{
+p {
 	font-size: 14px;
 }
 
 .no-text-decoration{
+h3 {
+	margin-top: 5px;
+}
+
+.no-text-decoration {
 	text-decoration: none;
 }
 
 .image-container{
+.image-container {
 	width: 100%;
 	height: 43vh;
 	overflow: hidden;
@@ -329,39 +489,49 @@ p{
 }
 
 .contact-container{
+.contact-container {
 	display: table;
   	margin: 0 auto;
+	margin: 0 auto;
 }
 
 .message-height{
 	height:170px;
+.message-height {
+	height: 170px;
 }
 
 .error-text{
+.error-text {
 	padding: 10px;
 	color: #ff0000;
 	font-size: 18px;
 }
 
 .success{
+.success-text {
 	padding: 10px;
 	font-size: 16px;
 }
 
 .float-left{
+.float-left {
 	float: left;
 }
 
 .float-right{
+.float-right {
 	float: right;
 }
 
 .no-flex-wrap{
+.no-flex-wrap {
 	flex-wrap: nowrap;
 }
 
 /* override bootstrap*/
 .table .table{
+.table .table {
 	background-color: transparent;
 }
 
@@ -402,10 +572,14 @@ p{
 
 /*Hide checkbox*/
 input[type=checkbox]{
+input[type=checkbox] {
 	display: none;
 }
+
+
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu{
+input[type=checkbox]:checked~#menu {
 	display: block;
 }
 
@@ -418,6 +592,17 @@ input[type=text], select, textarea {
 	margin-top: 6px; 
 	margin-bottom: 16px; 
 	resize: vertical 
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical
 }
 
 @media all and (max-width : 760px){
@@ -427,6 +612,7 @@ input[type=text], select, textarea {
 		margin-right: 2%;
 	}
 
+@media all and (max-width: 760px) {
 	ul#menu {
 		position: absolute;
 		display: none;
@@ -436,32 +622,46 @@ input[type=text], select, textarea {
 	}
 
 	header ul li, li a {
+	header ul li,
+	li a {
 		width: 100%;
 	}
 
 	p{
+	li {
 		font-size: 11px;
 	}
 
 	li{
+	p {
 		font-size: 11px;
 	}
 
 	h2{
+	h2,
+	h3 {
 		font-size: 18px;
+		margin-bottom: 5px;
 	}
 
 	.menu-text{
+	#about-me h2 {
+		padding-top: 0px;
+	}
+	.menu-text {
 		font-size: 16px;
 	}
 
 	.show-menu {
 		display:block;
 		margin:0;
+		display: block;
+		margin: 0;
 		padding-top: 10px;
 	}
 
 	.flex-33{
+	.flex-33 {
 		max-width: 100%;
 	}
 
@@ -470,27 +670,34 @@ input[type=text], select, textarea {
 	}
 
 	.icon{
+	.icon {
 		font-size: 15px;
 		padding-top: 8px;
 	}
 
 	.icon-container{
+	.icon-container {
 		padding: 0;
 	}
 
 	#search-text{
+	#search-text {
 		font-size: 15px;
 	}
 
 	.image-container{
 		height: 25vh;
+	.image-container {
+		height: 20vh;
 	}
 
 	.fa-icon{
+	.fa-icon {
 		height: 15px
 	}
 
 	.type-button{
+	.type-button {
 		font-size: 15px;
 	}
 }
@@ -500,54 +707,80 @@ input[type=text], select, textarea {
 	body{
 		margin-left: 2%;
 		margin-right: 2%;
+	.btn {
+		font-size: 9px;
+		padding: 10px 15px 10px 15px;
+		font-weight: 500;
+		letter-spacing: 0.5px;
 	}
+}
 
 	.flex-33{
+@media all and (max-width: 1000px) and (min-width: 760px) {
+	.flex-33 {
 		max-width: 50%;
 	}
 
 	#search-text{
+	#search-text {
 		font-size: 18px;
+	}
+	.btn {
+		font-size: 12px;
+	}
+	#about-me h2 {
+		padding-top: 0px;
 	}
 }
 
 @media all and (min-width: 1400px) {
 
 	.menu-text{
+	.menu-text {
 		font-size: 27px;
 	}
 
 	.menu-container{
+	.menu-container {
 		line-height: 50px;
 		min-width:250px;
+		min-width: 250px;
 		height: 50px;
 	}
 
 	.icon{
+	.icon {
 		font-size: 25px;
 	}
 
 	#search-text{
+	#search-text {
 		font-size: 25px;
 	}
 
 	p{
+	p {
 		font-size: 20px;
 	}
 
 	.type-button{
+	.type-button {
 		font-size: 22px;
 	}
 
 	#recommendedProducts a{
+	#recommendedProducts a {
 		font-size: 22px;
 	}
 
 	.fa-icon{
+	.fa-icon {
 		height: 41px;
 	}
 
 	.min-width-100{
 		min-width:150px;
+	.min-width-100 {
+		min-width: 150px;
 	}
 }
