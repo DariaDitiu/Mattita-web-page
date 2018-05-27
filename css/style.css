@@ -22,6 +22,13 @@ header a {
 	line-height: 0;
 }
 
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: #c28f52;
+}
+
 .menu-text {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -112,6 +119,64 @@ header a {
 	outline: #f4f4f4;
 }
 
+#categories-container {
+	position: relative;
+	padding: 5px 5px 0px 5px;
+}
+
+.scroller {
+	color: #000000;
+	width: 40px;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	padding: 5px;
+	margin-top: 8px;
+}
+
+.scroller-right {
+	float: right;
+}
+
+.scroller-left {
+	float: left;
+}
+
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 5px;
+	height: 50px;
+}
+
+.list {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+.no-slider {
+	position: relative;
+	margin: 0 auto;
+	display: table;
+}
+
+.item {
+	padding: 10px;
+	display: table-cell;
+	margin: 1px;
+	position: relative;
+	text-align: center;
+	cursor: grab;
+	cursor: -webkit-grab;
+	vertical-align: middle;
+	width: 150px;
+}
+
 .type-button {
 	color: #030303;
 	font-weight: normal;
@@ -120,13 +185,22 @@ header a {
 	outline: none;
 	font-size: 18px;
 }
+
 .type-button:hover,
 .type-button:focus,
 .type-button:active,
 .type-button.active,
 .open>.dropdown-toggle.type-button {
 	color: #c28f52;
-	font-weight: 700;
+  	font-weight: bold;
+}
+
+.type-button::after{
+	display: block;
+	font-weight: bold;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
 }
 
 .fa-icon {
@@ -249,20 +323,30 @@ header a {
 }
 
 .layout-column {
-	display: flex;	        /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	display: -webkit-box;	/* OLD - iOS 6-, Safari 3.1-6 */
-	display: -moz-box;	    /* OLD - Firefox 19- (buggy but mostly works) */
-	display: -ms-flexbox;	/* TWEENER - IE 10 */
-	display: -webkit-flex;	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
 	flex-direction: column;
 }
 
 .layout-row {
-	display: flex;	        /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	display: -webkit-box;	/* OLD - iOS 6-, Safari 3.1-6 */
-	display: -moz-box;	    /* OLD - Firefox 19- (buggy but mostly works) */
-	display: -ms-flexbox;	/* TWEENER - IE 10 */
-	display: -webkit-flex;	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
 	flex-direction: row;
 }
 
@@ -346,6 +430,10 @@ h3 {
 	margin-top: 5px;
 }
 
+ul {
+	padding-left: 0;
+}
+
 .no-text-decoration {
 	text-decoration: none;
 }
@@ -389,19 +477,23 @@ h3 {
 	flex-wrap: nowrap;
 }
 
+
 /* override bootstrap*/
+
 .table .table {
 	background-color: transparent;
 }
 
 
 /*Hide checkbox*/
+
 input[type=checkbox] {
 	display: none;
 }
 
 
 /*Show menu when invisible checkbox is checked*/
+
 input[type=checkbox]:checked~#menu {
 	display: block;
 }
@@ -442,6 +534,9 @@ textarea {
 		font-size: 18px;
 		margin-bottom: 5px;
 	}
+	h4 {
+		font-size: 17px;
+	}
 	#about-me h2 {
 		padding-top: 0px;
 	}
@@ -467,13 +562,13 @@ textarea {
 		font-size: 15px;
 	}
 	.image-container {
-		height: 20vh;
+		height: 30vh;
 	}
 	.fa-icon {
 		height: 15px
 	}
 	.type-button {
-		font-size: 15px;
+		font-size: 16px;
 	}
 	.btn {
 		font-size: 9px;
@@ -516,10 +611,16 @@ textarea {
 	p {
 		font-size: 20px;
 	}
+	h4 {
+		font-size: 24px;
+	}
 	.type-button {
 		font-size: 22px;
 	}
 	#recommendedProducts a {
+		font-size: 22px;
+	}
+	#allProductsType a {
 		font-size: 22px;
 	}
 	.fa-icon {

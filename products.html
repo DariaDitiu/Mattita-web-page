@@ -57,29 +57,32 @@
          </nav>
       </header>
       <section>
-         <img id="products-image" class="no-border image-container" src="./images/main oil.jpg">
+         <img id="products-image" class="no-border image-container" src="./images/main_oil.jpg" alt="Product Image">
       </section>
       <section>
-         <nav>
-            <ul class="no-margin-top-bottom list-style-type align-center">
-               <li class="inline-block min-width-100">
-                  <button type = "button" id = "oil" class="type-button inline-block align-center">Oils</button>
-               </li>
-               <li class="inline-block min-width-100">
-                  <button type = "button" id = "scrub" class="type-button inline-block align-center">Scrub</button>
-               </li>
-               <li class="inline-block min-width-100">
-                  <button type = "button" id = "cosmetics" class="type-button inline-block align-center">Cosmetics</button>
-               </li>
-               <li class="inline-block min-width-100">
-                  <button type = "button" id="food" class="type-button inline-block align-center">Food</button>
-               </li>
-            </ul>
-         </nav>
+         <div id="categories-container">
+            <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
+            <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
+            <div class="wrapper">
+               <ul class="list">
+                  <li class = "item">
+                     <button type = "button" id = "oil" class="type-button">Oils</button>
+                  </li>
+                  <li class = "item">
+                     <button type = "button" id = "scrub" class="type-button">Scrub</button>
+                  </li>
+                  <li class = "item">
+                     <button type = "button" id = "cosmetics" class="type-button">Cosmetics</button>
+                  </li>
+                  <li class = "item">
+                     <button type = "button" id="food" class="type-button">Food</button>
+                  </li>
+               </ul>
+            </div>
+         </div>
       </section>
       <div id="allProductsType" class="flex layout-row table border-bottom">
       </div>
-      <section>
       </section>
       <section class="align-center light-brown-bkgd padding-top-10">
          <h3>Follow Us</h3>

@@ -75,13 +75,13 @@
       <![endif]-->
    </head>
    <body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
-      <header class="align-center border-bottom margin-top-10">
+           <header class="align-center border-bottom margin-top-10">
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
             <div class="flex-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
                   <a class="icon-container" href="search-result.html">
                   <span class="glyphicon glyphicon-search icon"></span>
-                  </a>	
+                  </a>  
                   <input id="search-text" type="text" name="search" placeholder="Type here to search">
                </div>
             </div>
@@ -99,20 +99,20 @@
             </div>
          </div>
          <div id = "logo-container" class="flex table layout-row padding-top-bottom-10 no-margin">
-            <img id = "logo" class="width-25 align-center auto-margin" src="./images/new logo.png">
+            <img id = "logo" class="width-25 align-center auto-margin" src="./images/new_logo.png" alt="Matitta logo">
          </div>
          <nav class="margin-top-10 light-brown-bkgd">
             <label for="show-menu" class="show-menu menu-text">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
                <li class="inline-block align-left">
-                  <a class="menu-text gray-color inline-block align-center menu-container" href="index.html">Home</a>
+                  <a class="brown-color demi-bold menu-text inline-block align-center menu-container" href="index.html">Home</a>
                </li>
                <li class="inline-block align-left">
                   <a class="menu-text gray-color inline-block align-center menu-container" href="products.html">Products</a>
                </li>
                <li class="inline-block align-left">
-                  <a class="brown-color demi-bold menu-text inline-block align-center menu-container" href="contact.php">Contact</a>
+                  <a class="menu-text gray-color inline-block align-center menu-container" href="contact.php">Contact</a>
                </li>
             </ul>
          </nav>
@@ -127,18 +127,25 @@
                <input type="text" id="email" name="email" placeholder="Your email.." class="demi-bold no-margin" value="<?php echo isset($_POST['email']) ? $visitor_email : ''; ?>" required>
                <label for="subject" class= "padding-10 font-16">Message</label>
                <textarea id="message" name="message" placeholder="Write something.." class="demi-bold no-margin message-height" required><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-               <input type="submit" name="submit" class="md-button padding-left-right-30" value="Send">
+               <input type="submit" name="submit" class="btn btn-primary padding-top-bottom-10" value="Send">
             </form>
             <span class="success-text"><?= $success ?></span>
          </div>
       </div>
-      <footer>
-         <section id="followUs">
-            <div class="container border-bottom align-center">
-               <h1>FollowUs on ......</h1>
+      <section class="align-center light-brown-bkgd padding-top-10">
+         <h3>Follow Us</h3>
+         <div class="flex layout-row table align-center no-margin">
+            <div class="flex-10 table-cell">
+               <div class="icon-container">
+                  <a href="https://www.facebook.com/pg/MatittaKayu">
+                  <img class="fa-icon" src="./images/F_icon.svg" alt="Facebook logo"/>
+                  </a>
+               </div>
             </div>
-         </section>
-         <p class="container align-center"> Salt and mint, Copyright &copy; 2018 </p>
+         </div>
+      </section>
+      <footer>
+         <p class="align-right light-brown-bkgd padding-10"> Matitta, Copyright &copy; 2018 </p>
       </footer>
       <script src="js/javascript.js"></script>
    </body>
