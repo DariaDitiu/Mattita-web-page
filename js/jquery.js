@@ -9,6 +9,9 @@ $(document).ready(function () {
     if ($("#allProductsType").length) {
         createHorizontalScrolling();
     }
+
+    treatImageGalleryEvents();
+
 });
 
 function createDynamicSections() {
@@ -28,21 +31,33 @@ function createDynamicSections() {
             }
         }
         changeProductInformationByType(products.get("allProducts"));
+
+        var choseProductID = localStorage.getItem("choseProductID");
+        if ($("#productInformation").length && choseProductID != '') {
+            var allProducts = products.get("allProducts")
+            for (var i = 0; i <= allProducts.length; i++) {
+                var productID = getID(choseProductID);
+                if (allProducts[i].id === productID) {
+                    createProductPresentation(allProducts[i]);
+                    break;
+                }
+            }
+        }
     });
 }
 
-function changeProductsPhoto(image) {
-    $("#products-image").attr("src", image);
+function changeProductsPhoto(id, image) {
+    $(id).attr("src", image);
 };
 
-function resetProducts() {
-    $('#allProductsType').empty();
+function resetContainer(element) {
+    $(element).empty();
 };
 
 function createNewCollectionSection(newCollection) {
 
     var index = Math.floor(Math.random() * newCollection.length);
-    changeProductsPhoto(newCollection[index].image);
+    changeProductsPhoto("#products-image", newCollection[index].image);
 
     localStorage.setItem("categoryType", newCollection[index].type);
     $("#" + newCollection[index].type).focus();
@@ -54,7 +69,7 @@ function createNewCollectionSection(newCollection) {
 function createProductByTypeSection(allProducts) {
     for (var i = 0; i < allProducts.length; i++) {
         if (allProducts[i].type === 'oil') {
-            changeProductsPhoto(allProducts[i].image);
+            changeProductsPhoto("#products-image", allProducts[i].image);
         }
         break;
     }
@@ -66,26 +81,32 @@ function createProductByTypeSection(allProducts) {
 function changeProductInformationByType(allProducts) {
     var productType = '';
     $("#oil").click(function () {
-        resetProducts();
+        resetContainer('#allProductsType');
         productType = 'oil';
         localStorage.setItem("categoryType", productType);
         fillProductInformation(allProducts, productType, "allProductsType");
     });
     $("#scrub").click(function () {
-        resetProducts();
+        resetContainer('#allProductsType');
         productType = 'scrub';
         localStorage.setItem("categoryType", productType);
         fillProductInformation(allProducts, productType, "allProductsType");
     });
     $("#cosmetics").click(function () {
-        resetProducts();
+        resetContainer('#allProductsType');
         productType = 'cosmetics';
         localStorage.setItem("categoryType", productType);
         fillProductInformation(allProducts, productType, "allProductsType");
     });
     $("#food").click(function () {
-        resetProducts();
+        resetContainer('#allProductsType');
         productType = 'food';
+        localStorage.setItem("categoryType", productType);
+        fillProductInformation(allProducts, productType, "allProductsType");
+    });
+    $("#jewellery").click(function () {
+        resetContainer('#allProductsType');
+        productType = 'jewellery';
         localStorage.setItem("categoryType", productType);
         fillProductInformation(allProducts, productType, "allProductsType");
     });
@@ -120,7 +141,7 @@ function fillProductInformation(products, productType, idDIV) {
                 }
             }).appendTo('#' + id2 + '').click();
             $('<img/>', {
-                'class': 'width-100 no-padding',
+                'class': 'width-100 no-padding height-20vh img-cover',
                 'src': '' + products[i].image + ''
             }).appendTo('#' + id3 + '');
             $('<div/>', {
@@ -186,7 +207,7 @@ function createHorizontalScrolling() {
 
     var widthOfList = function () {
         var itemsWidth = 0;
-        $('.item').each(function () {
+        $('.category').each(function () {
             var itemWidth = $(this).outerWidth();
             itemsWidth += itemWidth;
         });
@@ -194,27 +215,27 @@ function createHorizontalScrolling() {
     };
 
     var widthOfHidden = function () {
-        var outer = $('.wrapper').outerWidth();
+        var outer = $('.cat-wrapper').outerWidth();
         return (outer - widthOfList() - getLeftPosi()) - scrollBarWidths;
     };
 
     var getLeftPosi = function () {
-        var position = $('.list').position();
+        var position = $('.cat-list').position();
         return position.left;
     };
 
     var reAdjust = function () {
-        $('.list').removeClass('no-slider');
+        $('.cat-list').removeClass('no-slider');
 
-        if ($('.wrapper').outerWidth() >= widthOfList() && getLeftPosi() >= 0) {
-            $('.list').addClass('no-slider');
+        if ($('.cat-wrapper').outerWidth() >= widthOfList() && getLeftPosi() >= 0) {
+            $('.cat-list').addClass('no-slider');
             $("#" + localStorage.getItem("categoryType")).focus();
             $('.scroller-right').hide();
             $('.scroller-left').hide();
             return;
         }
 
-        if (($('.wrapper').outerWidth()) < widthOfList()) {
+        if (($('.cat-wrapper').outerWidth()) < widthOfList()) {
             $('.scroller-right').show();
         } else {
             $('.scroller-right').hide();
@@ -222,8 +243,8 @@ function createHorizontalScrolling() {
 
         if (getLeftPosi() < 0) {
             $('.scroller-left').show();
-        } else if (getLeftPosi() < 0 && $('.wrapper').outerWidth() <= widthOfList()) {
-            $('.item').animate({
+        } else if (getLeftPosi() < 0 && $('.cat-wrapper').outerWidth() <= widthOfList()) {
+            $('.category').animate({
                 left: "-=" + getLeftPosi() + "px"
             }, 'slow');
             $('.scroller-left').hide();
@@ -239,8 +260,8 @@ function createHorizontalScrolling() {
     $('.scroller-right').click(function () {
         $('.scroller-left').fadeIn('slow');
         $('.scroller-right').fadeOut('slow');
-        
-        $('.list').animate({
+
+        $('.cat-list').animate({
             left: "+=" + widthOfHidden() + "px"
         }, 'slow', function () {});
 
@@ -251,10 +272,242 @@ function createHorizontalScrolling() {
         $('.scroller-right').fadeIn('slow');
         $('.scroller-left').fadeOut('slow');
 
-        $('.list').animate({
+        $('.cat-list').animate({
             left: "-=" + getLeftPosi() + "px"
         }, 'slow', function () {});
 
         $("#" + localStorage.getItem("categoryType")).focus();
     });
+}
+
+function createProductPresentation(product) {
+
+    var productTYpe = product.type.toLowerCase().replace(/\b[a-z]/g, function (letter) {
+        return letter.toUpperCase();
+    });
+    $('<span/>', {
+        'class': 'gray-color font-16 no-text-decoration padding-5',
+        text: ' ' + productTYpe + ''
+    }).appendTo('#productLocation');
+
+    $('<p/>', {
+        'class': 'font-16 no-margin demi-bold padding-top-10 padding-left-5',
+        text: ' ' + product.name + ''
+    }).appendTo('#productName');
+
+    fillProductImages(product);
+    fillProductDetails(product);
+
+}
+
+function getID(choseProduct) {
+    var regex = /([^\^x]+)/;
+    var choseProductID = regex.exec(choseProduct)[0];
+    return choseProductID;
+}
+
+function fillProductImages(product) {
+
+    $('<a/>', {
+        id: "mainImageLink",
+        "on": {
+            "click": function (event) {
+                fillImageGallary(event.currentTarget.childNodes["0"].attributes[1].nodeValue, product.image, product.imageDetailed);
+            }
+        }
+    }).appendTo("#productImage");
+    $('<img/>', {
+        'class': 'width-100 padding-5 img-cover height-40vh',
+        'src': '' + product.image + '',
+        id: "mainImage"
+    }).appendTo('#mainImageLink');
+
+    var images = product.imageDetailed;
+    var i;
+    for (i = 0; i < images.length; i++) {
+        var id1 = product.id + "x" + i;
+        var id2 = id1 + "X";
+        $('<div/>', {
+            'class': 'flex-33 padding-5 table-cell',
+            'id': id1
+        }).appendTo('#productImages');
+        $('<a/>', {
+            'id': id2,
+            "on": {
+                "click": function (event) {
+                    changeProductsPhoto("#mainImage", event.currentTarget.childNodes["0"].src);
+                }
+            }
+        }).appendTo("#" + id1 + "");
+        $('<img/>', {
+            'class': 'width-100 no-padding height-20vh img-cover',
+            'src': '' + images[i] + ''
+        }).appendTo('#' + id2 + '');
+    }
+}
+
+function fillProductDetails(product) {
+
+    $('<p/>', {
+        'class': 'align-justify no-margin',
+        text: '' + product.description + ''
+    }).appendTo('#productDescription');
+    $('<p/>', {
+        'class': 'demi-bold align-justify no-margin padding-top-bottom-10',
+        text: 'Product details'
+    }).appendTo('#productDescription');
+    $('<ul/>', {
+        'class': 'no-margin padding-left-15',
+        id: 'productDetails'
+    }).appendTo('#productDescription');
+    for (var i = 0; i < product.details.length; i++) {
+        $('<li/>', {
+            'class': 'align-justify no-margin',
+            text: '' + product.details[i] + ''
+        }).appendTo('#productDetails');
+    }
+    $('<div>', {
+        'class': 'margin-top-30 flex relative-position layout-row',
+        id: 'dimensionPrice'
+    }).appendTo('#productDescription');
+    $('<div>', {
+        'class': 'flex-50 layout-column',
+        id: 'dimensions'
+    }).appendTo('#dimensionPrice');
+    $('<p/>', {
+        'class': 'demi-bold no-margin padding-5 ',
+        text: 'Dimensions'
+    }).appendTo('#dimensions');
+    $('<p/>', {
+        'class': 'no-margin padding-5 ',
+        text: '' + product.dimensions + ''
+    }).appendTo('#dimensions');
+    $('<div>', {
+        'class': 'flex-50 layout-column',
+        id: 'price'
+    }).appendTo('#dimensionPrice');
+    $('<p/>', {
+        'class': 'demi-bold no-margin padding-5 ',
+        text: 'Price'
+    }).appendTo('#price');
+    $('<p/>', {
+        'class': 'no-margin demi-bold padding-5 ',
+        text: '' + product.price + ''
+    }).appendTo('#price');
+}
+
+function fillImageGallary(imageSelected, mainImage, imageDetailed) {
+    $("#img-gallery-container").show();
+    $("#image-gallery").show();
+
+    var currentImg = decodeSrcPath(imageSelected);
+    var j = 0;
+    var imagesDetLength = imageDetailed.length;
+    var totalImages = imagesDetLength + 1;
+    var imageSlidesIDs = 'image-slides' + j + '';
+    $('<div>', {
+        'class': 'image-slides display-none',
+        id: imageSlidesIDs
+    }).appendTo('#image-slides');
+    $('<div>', {
+        'class': 'number-text absolute-position',
+        text: "" + (j + 1) + "/" + totalImages + ""
+    }).appendTo('#' + imageSlidesIDs + '');
+    $('<img/>', {
+        'class': 'height-70vh img-contain',
+        'src': '' + currentImg + ''
+    }).appendTo('#' + imageSlidesIDs + '');
+    localStorage.setItem("curentImage", j);
+    var slidesIDs = [];
+    slidesIDs.push(imageSlidesIDs);
+
+    j++;
+
+    if (currentImg != mainImage) {
+        imageSlidesIDs = 'image-slides' + j + '';
+        $('<div>', {
+            'class': 'image-slides display-none',
+            id: imageSlidesIDs
+        }).appendTo('#image-slides');
+        $('<div>', {
+            'class': 'number-text absolute-position',
+            text: "" + (j + 1) + "/" + totalImages + ""
+        }).appendTo('#' + imageSlidesIDs + '');
+        $('<img/>', {
+            'class': 'height-70vh img-contain',
+            'src': '' + mainImage + ''
+        }).appendTo('#' + imageSlidesIDs + '');
+        j++;
+        slidesIDs.push(imageSlidesIDs);
+    }
+
+    for (var i = 0; i < imagesDetLength; i++) {
+        imageSlidesIDs = 'image-slides' + j + '';
+        if (currentImg != imageDetailed[i]) {
+            $('<div>', {
+                'class': 'image-slides display-none',
+                id: imageSlidesIDs
+            }).appendTo('#image-slides');
+            $('<div>', {
+                'class': 'number-text absolute-position',
+                id: 'number-text',
+                text: "" + (j + 1) + "/" + totalImages + ""
+            }).appendTo('#' + imageSlidesIDs + '');
+            $('<img/>', {
+                'class': 'height-70vh img-contain',
+                'src': '' + imageDetailed[i] + ''
+            }).appendTo('#' + imageSlidesIDs + '');
+            j++;
+            slidesIDs.push(imageSlidesIDs);
+        }
+    }
+    localStorage.setItem("imageSlideIds", slidesIDs);
+    showDesiredSlide("");
+}
+
+function treatImageGalleryEvents() {
+    $("#close-gallery").click(function () {
+        $("#img-gallery-container").hide();
+        $("#image-gallery").hide();
+        resetContainer("#image-slides");
+    });
+
+    $("#prev-img").click(function () {
+        showDesiredSlide("-");
+    });
+    $("#next-img").click(function () {
+        showDesiredSlide("+");
+    });
+}
+
+function showDesiredSlide(loc) {
+    var ids = [];
+    ids = localStorage.getItem("imageSlideIds").split(",");
+    var j = localStorage.getItem("curentImage");
+    $("#" + ids[j] + "").hide();
+    switch (loc) {
+        case "+":
+            j++;
+            break;
+        case "-":
+            j--;
+            break;
+        default:
+            break;
+    }
+
+    if (j == ids.length) {
+        j = 0;
+    }else if(j < 0){
+        j = ids.length-1;
+    }
+
+    $("#" + ids[j] + "").show();
+    localStorage.setItem("curentImage", j);
+}
+
+function decodeSrcPath(path){
+    var regex = /((?<=\images).*$)/;
+    var srcPath = decodeURI(regex.exec(path)[0]);
+    return "./images" + srcPath;
 }

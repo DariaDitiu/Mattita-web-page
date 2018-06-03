@@ -115,7 +115,7 @@
             <img id = "logo" class="width-25 align-center auto-margin" src="./images/new logo.png">
          </div>
          <nav class="margin-top-10 light-brown-bkgd">
-            <label for="show-menu" class="show-menu menu-text">Show Menu</label>
+            <label for="show-menu" class="show-menu menu-text display-none">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
                <li class="inline-block align-left">

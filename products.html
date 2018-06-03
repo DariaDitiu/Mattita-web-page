@@ -41,7 +41,7 @@
             <img id = "logo" class="width-25 align-center auto-margin" src="./images/new_logo.png" alt="Matitta logo">
          </div>
          <nav class="margin-top-10 light-brown-bkgd">
-            <label for="show-menu" class="show-menu menu-text">Show Menu</label>
+            <label for="show-menu" class="show-menu menu-text display-none">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
                <li class="inline-block align-left">
@@ -61,24 +61,29 @@
       </section>
       <section>
          <div id="categories-container">
-            <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
-            <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
-            <div class="wrapper">
-               <ul class="list">
-                  <li class = "item">
+            <div class="scroller scroller-left cursor-pointer display-none"><i class="glyphicon glyphicon-chevron-left"></i></div>
+            <div class="scroller scroller-right cursor-pointer display-none"><i class="glyphicon glyphicon-chevron-right"></i></div>
+
+            <div class="cat-wrapper relative-position">
+               <ul class="cat-list absolute-position">
+                  <li class = "category relative-position">
                      <button type = "button" id = "oil" class="type-button">Oils</button>
                   </li>
-                  <li class = "item">
+                  <li class = "category relative-position">
                      <button type = "button" id = "scrub" class="type-button">Scrub</button>
                   </li>
-                  <li class = "item">
+                  <li class = "category relative-position">
                      <button type = "button" id = "cosmetics" class="type-button">Cosmetics</button>
                   </li>
-                  <li class = "item">
+                  <li class = "category relative-position">
                      <button type = "button" id="food" class="type-button">Food</button>
+                  </li>
+                  <li class = "category relative-position">
+                     <button type = "button" id="jewellery" class="type-button">Jewellery</button>
                   </li>
                </ul>
             </div>
+
          </div>
       </section>
       <div id="allProductsType" class="flex layout-row table border-bottom">

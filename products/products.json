@@ -47,7 +47,7 @@
 		"dimensions": "150ml",
 		"image": "./images/salt food.jpg",
 		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
-		"newCollection": "true",
+		"newCollection": "false",
 		"recommendedProduct": "false"
 	},
 	{
@@ -60,7 +60,7 @@
 		"dimensions": "20x30x40",
 		"image": "./images/Green Tea Essential Oil Crystal.jpg",
 		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
-		"newCollection": "true",
+		"newCollection": "false",
 		"recommendedProduct": "false"
 	},
 	{
@@ -73,8 +73,8 @@
 		"dimensions": "20x30x40",
 		"image": "./images/Green Tea Essential Oil Crystal spa.jpg",
 		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
-		"newCollection": "true",
-		"recommendedProduct": "true"
+		"newCollection": "false",
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "scrub",
@@ -86,7 +86,7 @@
 		"dimensions": "20x30x40",
 		"image": "./images/Mint-Salt scrub.jpg",
 		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"],
-		"newCollection": "true",
+		"newCollection": "false",
 		"recommendedProduct": "false"
 	},
 	{
@@ -99,7 +99,7 @@
 		"dimensions": "20x30x40",
 		"image": "./images/Mint-Bath-Salt scrub.jpg",
 		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg"],
-		"newCollection": "true",
+		"newCollection": "false",
 		"recommendedProduct": "false"
 	},
 	{
@@ -179,5 +179,18 @@
 		"imageDetailed": ["./images/salt Oil rear.jpg"],
 		"newCollection": "false",
 		"recommendedProduct": "false"
+	},
+	{
+		"type": "jewellery",
+		"id": "necklace_B_P_Y",
+		"name": "Kaya - Hexagonal pendant from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 6 cm height, 5 cm width and 7 mm thickness.", "Necklace cord is about 70 cm long and 4 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "150 RON",
+		"dimensions": "Pendant: 6 x 5 x 7 Necklace: 70 x 4",
+		"image": "./images/necklace.jpg",
+		"imageDetailed": ["./images/necklace left.jpg", "./images/necklace left front.jpg", "./images/necklace box.jpg", "./images/necklace full.jpg", "./images/necklace used.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "true"
 	}
 ]

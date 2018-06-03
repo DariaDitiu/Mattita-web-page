@@ -102,7 +102,7 @@
             <img id = "logo" class="width-25 align-center auto-margin" src="./images/new_logo.png" alt="Matitta logo">
          </div>
          <nav class="margin-top-10 light-brown-bkgd">
-            <label for="show-menu" class="show-menu menu-text">Show Menu</label>
+            <label for="show-menu" class="show-menu menu-text display-none">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
                <li class="inline-block align-left">
@@ -124,9 +124,9 @@
                <label for="name" class= "padding-10 font-16">Name</label>
                <input type="text" id="name" name="name" placeholder="Your name.." value="<?php echo isset($_POST['name']) ? $name : ''; ?>" required>
                <label for="email" class= "padding-10 font-16">Email</label>
-               <input type="text" id="email" name="email" placeholder="Your email.." class="demi-bold no-margin" value="<?php echo isset($_POST['email']) ? $visitor_email : ''; ?>" required>
+               <input type="text" id="email" name="email" placeholder="Your email.." class="no-margin" value="<?php echo isset($_POST['email']) ? $visitor_email : ''; ?>" required>
                <label for="subject" class= "padding-10 font-16">Message</label>
-               <textarea id="message" name="message" placeholder="Write something.." class="demi-bold no-margin message-height" required><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+               <textarea id="message" name="message" placeholder="Write something.." class="no-margin message-height" required><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
                <input type="submit" name="submit" class="btn btn-primary padding-top-bottom-10" value="Send">
             </form>
             <span class="success-text"><?= $success ?></span>
