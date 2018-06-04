@@ -10,7 +10,7 @@ $(document).ready(function () {
         createHorizontalScrolling();
     }
 
-    treatImageGalleryEvents();
+    handleImageGalleryEvents();
 
 });
 
@@ -30,7 +30,7 @@ function createDynamicSections() {
                 createProductByTypeSection(products.get("allProducts"));
             }
         }
-        changeProductInformationByType(products.get("allProducts"));
+        handleCategoriesEvents(products.get("allProducts"));
 
         var choseProductID = localStorage.getItem("choseProductID");
         if ($("#productInformation").length && choseProductID != '') {
@@ -59,8 +59,9 @@ function createNewCollectionSection(newCollection) {
     var index = Math.floor(Math.random() * newCollection.length);
     changeProductsPhoto("#products-image", newCollection[index].image);
 
+    resetActiveButton();    
     localStorage.setItem("categoryType", newCollection[index].type);
-    $("#" + newCollection[index].type).focus();
+    $("#" + newCollection[index].type).addClass('active');
 
     fillProductInformation(newCollection, newCollection[index].type, "allProductsType");
     localStorage.setItem("newCollection", "false");
@@ -74,94 +75,124 @@ function createProductByTypeSection(allProducts) {
         break;
     }
     fillProductInformation(allProducts, 'oil', "allProductsType");
-    $("#oil").focus();
+    
+    resetActiveButton();
     localStorage.setItem("categoryType", 'oil');
-}
+    $("#oil").addClass('active');
 
-function changeProductInformationByType(allProducts) {
-    var productType = '';
+}
+function resetActiveButton(){
+    var type = localStorage.getItem("categoryType");
+    if(type != ''){
+        $("#"+type).removeClass('active');
+    }
+}
+function changeProductByType(allProducts, productType, idDIV){
+    resetContainer('#allProductsType');
+    resetActiveButton();
+    localStorage.setItem("categoryType", productType);
+     $("#"+productType).addClass('active');
+    fillProductInformation(allProducts, productType, idDIV);
+}
+function handleCategoriesEvents(allProducts) {
+   
     $("#oil").click(function () {
-        resetContainer('#allProductsType');
-        productType = 'oil';
-        localStorage.setItem("categoryType", productType);
-        fillProductInformation(allProducts, productType, "allProductsType");
+        changeProductByType(allProducts, 'oil', "allProductsType");
     });
     $("#scrub").click(function () {
-        resetContainer('#allProductsType');
-        productType = 'scrub';
-        localStorage.setItem("categoryType", productType);
-        fillProductInformation(allProducts, productType, "allProductsType");
+         changeProductByType(allProducts, 'scrub', "allProductsType");
     });
     $("#cosmetics").click(function () {
-        resetContainer('#allProductsType');
-        productType = 'cosmetics';
-        localStorage.setItem("categoryType", productType);
-        fillProductInformation(allProducts, productType, "allProductsType");
+         changeProductByType(allProducts, 'cosmetics', "allProductsType");
     });
     $("#food").click(function () {
-        resetContainer('#allProductsType');
-        productType = 'food';
-        localStorage.setItem("categoryType", productType);
-        fillProductInformation(allProducts, productType, "allProductsType");
+        changeProductByType(allProducts, 'food', "allProductsType");
     });
     $("#jewellery").click(function () {
-        resetContainer('#allProductsType');
-        productType = 'jewellery';
-        localStorage.setItem("categoryType", productType);
-        fillProductInformation(allProducts, productType, "allProductsType");
+        changeProductByType(allProducts, 'jewellery', "allProductsType");
     });
 };
 
 function fillProductInformation(products, productType, idDIV) {
 
     var i;
+    var productByType = [];
     for (i = 0; i < products.length; i++) {
         if (products[i].type === productType || productType === '') {
+            productByType.push(products[i]);
+            if (productByType.length <= 6) {
+                var id1 = products[i].id;
+                var id2 = id1 + "x" + i;
+                var id3 = id2 + i;
+                var id4 = id3 + i;
 
-            var id1 = products[i].id;
-            var id2 = id1 + "x" + i;
-            var id3 = id2 + i;
-            var id4 = id3 + i;
+                $('<div/>', {
+                    'class': 'flex-33 padding-5 table-cell align-flex-start',
+                    'id': id1
+                }).appendTo('#' + idDIV + '');
+                $('<div/>', {
+                    'class': 'flex relative-position',
+                    'id': id2
+                }).appendTo('#' + id1 + '');
+                $('<a/>', {
+                    'href': 'products-description.html',
+                    'id': id3,
+                    "on": {
+                        "click": function (event) {
+                            localStorage.setItem("choseProductID", '' + event.currentTarget.offsetParent.id + '');
+                        }
+                    }
+                }).appendTo('#' + id2 + '').click();
+                $('<img/>', {
+                    'class': 'width-100 no-padding height-20vh img-cover',
+                    'src': '' + products[i].image + ''
+                }).appendTo('#' + id3 + '');
+                $('<div/>', {
+                    'class': 'align-center layout-column flex ruby-text-container padding-5',
+                    'id': id4
+                }).appendTo('#' + id2 + '');
+                $('<a/>', {
+                    'class': 'no-margin light-text no-text-decoration gray-color',
+                    text: '' + products[i].name + '',
+                    'href': 'products-description.html',
+                    "on": {
+                        "click": function (event) {
+                            localStorage.setItem('choseProductID', '' + event.currentTarget.offsetParent.id + '');
+                        }
+                    }
+                }).appendTo('#' + id4 + '');
+                $('<h4/>', {
+                    'class': 'demi-bold no-margin',
+                    text: '' + products[i].price + ''
+                }).appendTo('#' + id4 + '');
+            }
+        }
+    }
 
-            $('<div/>', {
-                'class': 'flex-33 padding-5 table-cell align-flex-start',
-                'id': id1
-            }).appendTo('#' + idDIV + '');
-            $('<div/>', {
-                'class': 'flex relative-position',
-                'id': id2
-            }).appendTo('#' + id1 + '');
-            $('<a/>', {
-                'href': 'products-description.html',
-                'id': id3,
-                "on": {
-                    "click": function (event) {
-                        localStorage.setItem("choseProductID", '' + event.currentTarget.offsetParent.id + '');
-                    }
+    var pag = productByType.length / 6;
+    if (productByType.length % 6 != 0) {
+        pag++;
+    }
+
+    if (pag >= 2) {
+        resetContainer('#pagination');
+        for (i = 1; i <= pag; i++) {
+            var id = "pag" + i;
+            var id1 = id + i;
+            $('<li/>', {
+                'class': 'page-item',
+                'id': id
+            }).appendTo('#pagination');
+            $('<button/>', {
+                'class': 'page-button',
+                text: "" + i + "",
+                'id': id1,
+                click: function (event) {
+                    var j = parseInt(event.currentTarget.textContent);
+                    var prods = productByType.slice((j - 1) * 6 + 1, j * 6 + 1);
+                    fillProductInformation(prods, productType, idDIV);
                 }
-            }).appendTo('#' + id2 + '').click();
-            $('<img/>', {
-                'class': 'width-100 no-padding height-20vh img-cover',
-                'src': '' + products[i].image + ''
-            }).appendTo('#' + id3 + '');
-            $('<div/>', {
-                'class': 'align-center layout-column flex ruby-text-container padding-5',
-                'id': id4
-            }).appendTo('#' + id2 + '');
-            $('<a/>', {
-                'class': 'no-margin light-text no-text-decoration gray-color',
-                text: '' + products[i].name + '',
-                'href': 'products-description.html',
-                "on": {
-                    "click": function (event) {
-                        localStorage.setItem('choseProductID', '' + event.currentTarget.offsetParent.id + '');
-                    }
-                }
-            }).appendTo('#' + id4 + '');
-            $('<h4/>', {
-                'class': 'demi-bold no-margin',
-                text: '' + products[i].price + ''
-            }).appendTo('#' + id4 + '');
+            }).appendTo('#' + id + '');
         }
     }
 };
@@ -229,7 +260,6 @@ function createHorizontalScrolling() {
 
         if ($('.cat-wrapper').outerWidth() >= widthOfList() && getLeftPosi() >= 0) {
             $('.cat-list').addClass('no-slider');
-            $("#" + localStorage.getItem("categoryType")).focus();
             $('.scroller-right').hide();
             $('.scroller-left').hide();
             return;
@@ -264,8 +294,6 @@ function createHorizontalScrolling() {
         $('.cat-list').animate({
             left: "+=" + widthOfHidden() + "px"
         }, 'slow', function () {});
-
-        $("#" + localStorage.getItem("categoryType")).focus();
     });
 
     $('.scroller-left').click(function () {
@@ -275,8 +303,6 @@ function createHorizontalScrolling() {
         $('.cat-list').animate({
             left: "-=" + getLeftPosi() + "px"
         }, 'slow', function () {});
-
-        $("#" + localStorage.getItem("categoryType")).focus();
     });
 }
 
@@ -465,7 +491,7 @@ function fillImageGallary(imageSelected, mainImage, imageDetailed) {
     showDesiredSlide("");
 }
 
-function treatImageGalleryEvents() {
+function handleImageGalleryEvents() {
     $("#close-gallery").click(function () {
         $("#img-gallery-container").hide();
         $("#image-gallery").hide();
@@ -498,15 +524,15 @@ function showDesiredSlide(loc) {
 
     if (j == ids.length) {
         j = 0;
-    }else if(j < 0){
-        j = ids.length-1;
+    } else if (j < 0) {
+        j = ids.length - 1;
     }
 
     $("#" + ids[j] + "").show();
     localStorage.setItem("curentImage", j);
 }
 
-function decodeSrcPath(path){
+function decodeSrcPath(path) {
     var regex = /((?<=\images).*$)/;
     var srcPath = decodeURI(regex.exec(path)[0]);
     return "./images" + srcPath;

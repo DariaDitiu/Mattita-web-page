@@ -252,6 +252,11 @@ a:active {
 	margin-bottom: 0;
 }
 
+
+.no-top-margin {
+	margin-top: 0;
+}
+
 .margin-bottom-10 {
 	margin-bottom: 10px;
 }
@@ -572,6 +577,26 @@ ul {
 	position: relative;
 	margin: 0 auto;
 	display: table;
+}
+
+.page-button {
+    position: relative;
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-button:hover,
+.page-button:focus,
+.page-button:active,
+.page-button.active,
+.open>.dropdown-toggle.page-button {
+	color: #c28f52;
+}
+
+.active{
+	color: #c28f52;
 }
 
 /* override bootstrap*/

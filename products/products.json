@@ -9,7 +9,7 @@
 		"image": "./images/salt Oil.jpg",
 		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
 		"newCollection": "false",
-		"recommendedProduct": "true"
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "oil",
@@ -35,7 +35,7 @@
 		"image": "./images/Green-Tea Essential Oil.jpg",
 		"imageDetailed": ["./images/salt Oil rear.jpg", "./images/salt Oil right1.jpg", "./images/salt Oil right.jpg", "./images/salt Oil left1.jpg", "./images/salt Oil left.jpg", "./images/salt Oil front.jpg"],
 		"newCollection": "false",
-		"recommendedProduct": "true"
+		"recommendedProduct": "false"
 	},
 	{
 		"type": "scrub",
@@ -189,8 +189,113 @@
 		"price": "150 RON",
 		"dimensions": "Pendant: 6 x 5 x 7 Necklace: 70 x 4",
 		"image": "./images/necklace.jpg",
-		"imageDetailed": ["./images/necklace left.jpg", "./images/necklace left front.jpg", "./images/necklace box.jpg", "./images/necklace full.jpg", "./images/necklace used.jpg"],
+		"imageDetailed": ["./images/necklace left.jpg", "./images/necklace left front.jpg", "./images/Box.jpg", "./images/necklace full.jpg", "./images/necklace used.jpg"],
 		"newCollection": "true",
 		"recommendedProduct": "true"
+	},
+	{
+		"type": "jewellery",
+		"id": "ria",
+		"name": "Ria | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 4 cm height, 4.5 cm width and 7 mm thickness.", "Necklace cord is about 60 cm long and 4 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "200 RON",
+		"dimensions": "Pendant: 4 x 4.5 x 7 Necklace: 60 x 4",
+		"image": "./images/Ria front.jpg",
+		"imageDetailed": ["./images/Box.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
+	},
+	{
+		"type": "jewellery",
+		"id": "tala",
+		"name": "Tala | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 4 cm height, 4.5 cm width and 7 mm thickness.", "Necklace cord is about 70 cm long and 3 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "200 RON",
+		"dimensions": "Pendant: 4 x 4.5 x 7 Necklace: 70 x 3",
+		"image": "./images/Tala.jpg",
+		"imageDetailed": ["./images/Tala front.jpg", "./images/Box.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
+	},
+	{
+		"type": "jewellery",
+		"id": "roa",
+		"name": "Roa | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 5 cm height, 5.5 cm width and 7 mm thickness.", "Necklace cord is about 70 cm long and 3 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "100 RON",
+		"dimensions": "Pendant: 5 x 5.5 x 7 Necklace: 70 x 3",
+		"image": "./images/Roa.jpg",
+		"imageDetailed": ["./images/Roa front.jpg", "./images/Box.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
+	},
+	{
+		"type": "jewellery",
+		"id": "noa",
+		"name": "Noa | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 4 cm height, 6.5 cm width and 7 mm thickness.", "Necklace cord is about 70 cm long and 4 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "80 RON",
+		"dimensions": "Pendant: 4 x 6.5 x 7 Necklace: 70 x 4",
+		"image": "./images/Noa.jpg",
+		"imageDetailed": ["./images/Noa front.jpg", "./images/Box.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "true"
+	},
+	{
+		"type": "jewellery",
+		"id": "mali",
+		"name": "Mali | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 4 cm height, 4.5 cm width and 7 mm thickness.", "Necklace cord is about 70 cm long and 3 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "80 RON",
+		"dimensions": "Pendant: 4 x 4.5 x 7 Necklace: 70 x 3",
+		"image": "./images/Mali.jpg",
+		"imageDetailed": ["./images/Box.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "true"
+	},
+	{
+		"type": "jewellery",
+		"id": "maya",
+		"name": "Maya | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 4 cm height, 4.5 cm width and 7 mm thickness.", "Necklace cord is about 70 cm long and 3 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "180 RON",
+		"dimensions": "Pendant: 4 x 4.5 x 7 Necklace: 70 x 3",
+		"image": "./images/Maya.jpg",
+		"imageDetailed": ["./images/Maya front.jpg","./images/Box.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
+	},
+	{
+		"type": "jewellery",
+		"id": "bantiwa",
+		"name": "Bantiwa | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry.Handcrafted hexagonal pendant made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Pendant is approx 4 cm height, 4.5 cm width and 7 mm thickness.", "Necklace cord is about 70 cm long and 3 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "180 RON",
+		"dimensions": "Pendant: 4 x 4.5 x 7 Necklace: 70 x 3",
+		"image": "./images/Bantiwa.jpg",
+		"imageDetailed": ["./images/Bantiwa front.jpg","./images/Bantiwa box.jpg", "./images/Bantiwa rear.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
+	},
+		{
+		"type": "jewellery",
+		"id": "tiana",
+		"name": "Tiana | Necklace from colored pencils",
+		"description": "Take a step into the world of colors and imagination with Matitta Kayu jewelry. Handcrafted triangle earrings made of Koh-I-Noor colored pencils.",
+		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Earrings are approx 3 cm height, 3.5 cm width and 7 mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
+		"price": "280 RON",
+		"dimensions": "Pendant: 4 x 4.5 x 7 Necklace: 70 x 3",
+		"image": "./images/Tiana.jpg",
+		"imageDetailed": ["./images/Box.jpg"],
+		"newCollection": "true",
+		"recommendedProduct": "false"
 	}
+	
 ]
