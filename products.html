@@ -18,7 +18,7 @@
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
             <div class="flex-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
-                  <a class="icon-container" href="search-result.html">
+                  <a id="search-result" class="icon-container" href="search-results.html">
                   <span class="glyphicon glyphicon-search icon"></span>
                   </a>  
                   <input id="search-text" type="text" name="search" placeholder="Type here to search">
@@ -61,30 +61,30 @@
       </section>
       <section>
          <div id="categories-container">
-            <div class="scroller scroller-left cursor-pointer display-none"><i class="glyphicon glyphicon-chevron-left"></i></div>
-            <div class="scroller scroller-right cursor-pointer display-none"><i class="glyphicon glyphicon-chevron-right"></i></div>
-            <div class="cat-wrapper relative-position">
-               <ul class="cat-list absolute-position">
-                  <li class = "category relative-position">
-                     <button type = "button" id = "oil" class="type-button">Oils</button>
+            <div class="scroller scroller-left cursor-pointer hidden-arrow"><i class="glyphicon glyphicon-chevron-left"></i></div>
+            <div class="scroller scroller-right cursor-pointer hidden-arrow"><i class="glyphicon glyphicon-chevron-right"></i></div>
+            <div class="category-wrapper relative-position">
+               <ul class="category-list absolute-position">
+                  <li class = "category relative-position no-left-padding">
+                     <button type = "button" id = "oil" class="category-button no-left-padding">Oil</button>
                   </li>
                   <li class = "category relative-position">
-                     <button type = "button" id = "scrub" class="type-button">Scrub</button>
+                     <button type = "button" id = "scrub" class="category-button">Scrub</button>
                   </li>
                   <li class = "category relative-position">
-                     <button type = "button" id = "cosmetics" class="type-button">Cosmetics</button>
+                     <button type = "button" id = "cosmetics" class="category-button">Cosmetics</button>
                   </li>
                   <li class = "category relative-position">
-                     <button type = "button" id="food" class="type-button">Food</button>
+                     <button type = "button" id="food" class="category-button">Food</button>
                   </li>
                   <li class = "category relative-position">
-                     <button type = "button" id="jewellery" class="type-button">Jewellery</button>
+                     <button type = "button" id="jewellery" class="category-button">Jewellery</button>
                   </li>
                </ul>
             </div>
          </div>
       </section>
-      <section id="productsGallery" class="flex layout-column table border-bottom">
+      <section class="flex layout-column table border-bottom">
          <div id="allProductsType" class="flex layout-row table">
          </div>
          <ul id="pagination" class="pagination align-center no-top-margin">

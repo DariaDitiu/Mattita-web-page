@@ -139,14 +139,14 @@ a:active {
 	float: left;
 }
 
-.cat-wrapper {
+.category-wrapper {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 5px;
 	height: 50px;
 }
 
-.cat-list {
+.category-list {
 	left: 0px;
 	top: 0px;
 	margin-left: 0px;
@@ -165,7 +165,7 @@ a:active {
 	width: 150px;
 }
 
-.type-button {
+.category-button {
 	color: #030303;
 	font-weight: normal;
 	background: transparent;
@@ -174,21 +174,25 @@ a:active {
 	font-size: 18px;
 }
 
-.type-button:hover,
-.type-button:focus,
-.type-button:active,
-.type-button.active,
-.open>.dropdown-toggle.type-button {
+.category-button:hover,
+.category-button:focus,
+.category-button:active,
+.category-button.active,
+.open>.dropdown-toggle.category-button {
 	color: #c28f52;
 	font-weight: bold;
 }
 
-.type-button::after {
+.category-button::after {
 	display: block;
 	font-weight: bold;
 	height: 0;
 	overflow: hidden;
 	visibility: hidden;
+}
+
+.hidden-arrow{
+	color: transparent;
 }
 
 .fa-icon {
@@ -251,7 +255,6 @@ a:active {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
 
 .no-top-margin {
 	margin-top: 0;
@@ -585,6 +588,7 @@ ul {
     line-height: 1.25;
     background-color: #fff;
     border: 1px solid #dee2e6;
+    font-size: 18px;
 }
 
 .page-button:hover,
@@ -593,10 +597,12 @@ ul {
 .page-button.active,
 .open>.dropdown-toggle.page-button {
 	color: #c28f52;
+	font-weight: bold;
 }
 
 .active{
 	color: #c28f52;
+	font-weight: bold;
 }
 
 /* override bootstrap*/
@@ -683,7 +689,7 @@ textarea {
 	.fa-icon {
 		height: 15px
 	}
-	.type-button {
+	.category-button {
 		font-size: 16px;
 	}
 	.btn {
@@ -768,7 +774,7 @@ textarea {
 	h4 {
 		font-size: 24px;
 	}
-	.type-button {
+	.category-button {
 		font-size: 22px;
 	}
 	#recommendedProducts a {

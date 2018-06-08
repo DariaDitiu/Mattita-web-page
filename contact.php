@@ -79,7 +79,7 @@
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
             <div class="flex-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
-                  <a class="icon-container" href="search-result.html">
+                 <a id="search-result" class="icon-container" href="search-results.html">
                   <span class="glyphicon glyphicon-search icon"></span>
                   </a>  
                   <input id="search-text" type="text" name="search" placeholder="Type here to search">
@@ -106,13 +106,13 @@
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
                <li class="inline-block align-left">
-                  <a class="brown-color demi-bold menu-text inline-block align-center menu-container" href="index.html">Home</a>
+                  <a class="gray-color menu-text inline-block align-center menu-container" href="index.html">Home</a>
                </li>
                <li class="inline-block align-left">
-                  <a class="menu-text gray-color inline-block align-center menu-container" href="products.html">Products</a>
+                  <a class="gray-color menu-text inline-block align-center menu-container" href="products.html">Products</a>
                </li>
                <li class="inline-block align-left">
-                  <a class="menu-text gray-color inline-block align-center menu-container" href="contact.php">Contact</a>
+                  <a class="brown-color demi-bold menu-text inline-block align-center menu-container" href="contact.php">Contact</a>
                </li>
             </ul>
          </nav>
@@ -147,6 +147,8 @@
       <footer>
          <p class="align-right light-brown-bkgd padding-10"> Matitta, Copyright &copy; 2018 </p>
       </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/jquery.js"></script>
       <script src="js/javascript.js"></script>
    </body>
 </html>

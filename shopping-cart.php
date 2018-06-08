@@ -91,7 +91,7 @@
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
             <div class="flex-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
-                  <a class="icon-container" href="search-result.html">
+                  <a id="search-result" class="icon-container" href="search-results.html">
                   <span class="glyphicon glyphicon-search icon"></span>
                   </a>	
                   </a>  
