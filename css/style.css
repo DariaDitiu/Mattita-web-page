@@ -105,7 +105,7 @@ a:active {
 	padding: 6px 12px 6px 12px;
 }
 
-#search-text {
+#searchValue {
 	border: none;
 	background: transparent;
 	margin-bottom: 0;
@@ -114,7 +114,7 @@ a:active {
 	padding: 0;
 }
 
-#search-text:focus {
+#searchValue:focus {
 	outline: #f4f4f4;
 }
 
@@ -189,6 +189,11 @@ a:active {
 	height: 0;
 	overflow: hidden;
 	visibility: hidden;
+}
+
+
+.dropdown-menu{
+	background: #f4f4f4;
 }
 
 .hidden-arrow{
@@ -479,13 +484,13 @@ ul {
 }
 
 .error-text {
-	padding: 10px;
+	padding: 10px 10px 10px 0;
 	color: #ff0000;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .success-text {
-	padding: 10px;
+	padding: 10px 10px 10px 0;
 	font-size: 16px;
 }
 
@@ -501,7 +506,7 @@ ul {
 	flex-wrap: nowrap;
 }
 
-.img-gallery-container {
+.lightbox-container {
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -511,7 +516,7 @@ ul {
 	opacity: 0.5;
 }
 
-.image-gallery {
+.lightbox {
 	width: 80%;
 	height: 60%;
 	z-index: 1;
@@ -659,6 +664,9 @@ textarea {
 	h4 {
 		font-size: 17px;
 	}
+	span{
+		font-size: 15px;
+	}
 	#about-me h2 {
 		padding-top: 0px;
 	}
@@ -680,7 +688,7 @@ textarea {
 	.icon-container {
 		padding: 0;
 	}
-	#search-text {
+	#searchValue {
 		font-size: 15px;
 	}
 	.image-container {
@@ -713,7 +721,7 @@ textarea {
 	#productLocation {
 		font-size: 14px;
 	}
-	#productName p {
+	#productName p{
 		font-size: 14px;
 	}
 	.height-40vh {
@@ -722,7 +730,7 @@ textarea {
 	.height-70vh {
 		height: 30vh;
 	}
-	.image-gallery {
+	.lightbox {
 		width: 100%;
 	}
 	.prev,
@@ -733,13 +741,19 @@ textarea {
 	.close-button {
 		right: 15px;
 	}
+	#contact-form label, input{
+		font-size: 15px;
+		padding: 0 0 0 10px;
+		margin: 0;
+	}
+
 }
 
 @media all and (max-width: 1000px) and (min-width: 760px) {
 	.flex-33 {
 		max-width: 50%;
 	}
-	#search-text {
+	#searchValue {
 		font-size: 18px;
 	}
 	.btn {
@@ -765,7 +779,7 @@ textarea {
 	.icon {
 		font-size: 25px;
 	}
-	#search-text {
+	#searchValue {
 		font-size: 25px;
 	}
 	p {
@@ -780,7 +794,7 @@ textarea {
 	#recommendedProducts a {
 		font-size: 22px;
 	}
-	#allProductsType a {
+	#productsByCategory a {
 		font-size: 22px;
 	}
 	.fa-icon {

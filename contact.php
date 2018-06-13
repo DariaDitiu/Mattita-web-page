@@ -75,19 +75,28 @@
       <![endif]-->
    </head>
    <body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
-           <header class="align-center border-bottom margin-top-10">
+      <header class="align-center border-bottom margin-top-10">
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
             <div class="flex-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
-                 <a id="search-result" class="icon-container" href="search-results.html">
+                  <a id="search" class="icon-container" href="search-results.html">
                   <span class="glyphicon glyphicon-search icon"></span>
                   </a>  
-                  <input id="search-text" type="text" name="search" placeholder="Type here to search">
+                  <input id="searchValue" type="text" name="search" placeholder="Type here to search">
                </div>
             </div>
             <div class="flex-10 table-cell">
-               <div class="icon-container">
+               <div class="icon-container dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   <span class="glyphicon glyphicon glyphicon-globe icon"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                  <li class="border-bottom">
+                     <button id="ro" type = "button" class="category-button padding-10">Romana</button>
+                  </li>
+                  <li>
+                     <button id="en" type = "button" class="category-button padding-10">English</button>
+                  </li>
                </div>
             </div>
             <div class="flex-10 table-cell">
@@ -102,38 +111,40 @@
             <img id = "logo" class="width-25 align-center auto-margin" src="./images/new_logo.png" alt="Matitta logo">
          </div>
          <nav class="margin-top-10 light-brown-bkgd">
-            <label for="show-menu" class="show-menu menu-text display-none">Show Menu</label>
+            <label id="show-menu-label" for="show-menu" class="show-menu menu-text display-none">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
                <li class="inline-block align-left">
-                  <a class="gray-color menu-text inline-block align-center menu-container" href="index.html">Home</a>
+                  <a id="home" class="gray-color menu-text inline-block align-center menu-container" href="index.html">Home</a>
                </li>
                <li class="inline-block align-left">
-                  <a class="gray-color menu-text inline-block align-center menu-container" href="products.html">Products</a>
+                  <a id="products" class="gray-color menu-text inline-block align-center menu-container" href="products.html">Products</a>
                </li>
                <li class="inline-block align-left">
-                  <a class="brown-color demi-bold menu-text inline-block align-center menu-container" href="contact.php">Contact</a>
+                  <a id="contact" class="brown-color demi-bold menu-text inline-block align-center menu-container" href="contact.php">Contact</a>
                </li>
             </ul>
          </nav>
       </header>
-      <div class="border-bottom">
-         <div class="contact-container padding-10 width-75">
-            <span class="error-text"><?= $msg ?></span>
-            <form id="contact-form" method="post" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>">
-               <label for="name" class= "padding-10 font-16">Name</label>
-               <input type="text" id="name" name="name" placeholder="Your name.." value="<?php echo isset($_POST['name']) ? $name : ''; ?>" required>
-               <label for="email" class= "padding-10 font-16">Email</label>
-               <input type="text" id="email" name="email" placeholder="Your email.." class="no-margin" value="<?php echo isset($_POST['email']) ? $visitor_email : ''; ?>" required>
-               <label for="subject" class= "padding-10 font-16">Message</label>
-               <textarea id="message" name="message" placeholder="Write something.." class="no-margin message-height" required><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-               <input type="submit" name="submit" class="btn btn-primary padding-top-bottom-10" value="Send">
-            </form>
-            <span class="success-text"><?= $success ?></span>
+      <section>
+         <div class="border-bottom">
+            <div class="contact-container padding-10 width-75">
+               <span id="errorText" class="error-text"><?= $msg ?></span>
+               <form id="contact-form" method="post" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>">
+                  <label id="name-label" for="name" class= "padding-10 font-16">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name..." value="<?php echo isset($_POST['name']) ? $name : ''; ?>" required>
+                  <label id="email-label" for="email" class= "padding-10 font-16">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email..." class="no-margin" value="<?php echo isset($_POST['email']) ? $visitor_email : ''; ?>" required>
+                  <label id="mess-label" for="subject" class= "padding-10 font-16">Message</label>
+                  <textarea id="message" name="message" placeholder="Write something..." class="no-margin message-height" required><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+                  <input id="submit" type="submit" name="submit" class="btn btn-primary padding-top-bottom-10 margin-top-10 margin-bottom-10" value="Send">
+               </form>
+               <span id="successSend" class="success-text"><?= $success ?></span>
+            </div>
          </div>
-      </div>
+      </section>
       <section class="align-center light-brown-bkgd padding-top-10">
-         <h3>Follow Us</h3>
+         <h3 id="follow-us">Follow Us</h3>
          <div class="flex layout-row table align-center no-margin">
             <div class="flex-10 table-cell">
                <div class="icon-container">
@@ -148,6 +159,7 @@
          <p class="align-right light-brown-bkgd padding-10"> Matitta, Copyright &copy; 2018 </p>
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="js/jquery.js"></script>
       <script src="js/javascript.js"></script>
    </body>
