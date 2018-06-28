@@ -58,7 +58,7 @@
    		}
    	}
    }
-   ?>
+?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -77,7 +77,7 @@
    <body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
       <header class="align-center border-bottom margin-top-10">
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
-            <div class="flex-80 table-cell no-margin">
+            <div class="flex-x max-width-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
                   <a id="search" class="icon-container" href="search-results.html">
                   <span class="glyphicon glyphicon-search icon"></span>
@@ -85,7 +85,7 @@
                   <input id="searchValue" type="text" name="search" placeholder="Type here to search">
                </div>
             </div>
-            <div class="flex-10 table-cell">
+            <div class="flex-x max-width-10 table-cell">
                <div class="icon-container dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   <span class="glyphicon glyphicon glyphicon-globe icon"></span>
@@ -99,9 +99,9 @@
                   </li>
                </div>
             </div>
-            <div class="flex-10 table-cell">
+            <div class="flex-x max-width-10 table-cell">
                <div class="icon-container">
-                  <a href="shopping-cart.php">
+                  <a id="shoppingCart" href="shopping-cart.html">
                   <span class="glyphicon glyphicon-shopping-cart icon"></span>
                   </a>
                </div>
@@ -146,7 +146,7 @@
       <section class="align-center light-brown-bkgd padding-top-10">
          <h3 id="follow-us">Follow Us</h3>
          <div class="flex layout-row table align-center no-margin">
-            <div class="flex-10 table-cell">
+            <div class="flex-x max-width-10 table-cell">
                <div class="icon-container">
                   <a href="https://www.facebook.com/pg/MatittaKayu">
                   <img class="fa-icon" src="./images/F_icon.svg" alt="Facebook logo"/>

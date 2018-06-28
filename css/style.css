@@ -281,6 +281,10 @@ a:active {
 	margin: auto;
 }
 
+.margin-10{
+	margin: 10px;
+}
+
 .padding-5 {
 	padding: 5px;
 }
@@ -349,40 +353,48 @@ a:active {
 	flex-direction: row;
 }
 
-.flex-50 {
+.flex-x{
 	max-height: 100%;
-	max-width: 50%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;
 	box-sizing: border-box;
 }
 
-.flex-80 {
-	max-height: 100%;
+.max-width-100 {
+	max-width: 100%;
+}
+
+.min-width-100 {
+	min-width: 100px;
+}
+
+.max-width-80 {
 	max-width: 80%;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 100%;
-	box-sizing: border-box;
 }
 
-.flex-33 {
-	max-height: 100%;
+.max-width-50{
+	max-width: 50%;
+}
+
+.max-width-40 {
+	max-width: 40%;
+}
+
+.max-width-33 {
 	max-width: 33.33%;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 100%;
-	box-sizing: border-box;
 }
 
-.flex-10 {
-	max-height: 100%;
+.max-width-20 {
+	max-width: 20%;
+}
+
+.max-width-15{
+	max-width: 15%;
+}
+
+.max-width-10 {
 	max-width: 10%;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 100%;
-	box-sizing: border-box;
 }
 
 .relative-position {
@@ -424,14 +436,6 @@ a:active {
 
 .font-16 {
 	font-size: 16px;
-}
-
-.max-width-100 {
-	max-width: 100%;
-}
-
-.min-width-100 {
-	min-width: 100px;
 }
 
 .line-height-1 {
@@ -486,12 +490,12 @@ ul {
 .error-text {
 	padding: 10px 10px 10px 0;
 	color: #ff0000;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .success-text {
 	padding: 10px 10px 10px 0;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .float-left {
@@ -615,6 +619,10 @@ ul {
 	background-color: transparent;
 }
 
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: auto;
+}
+
 /*Hide checkbox*/
 input[type=checkbox] {
 	display: none;
@@ -678,8 +686,11 @@ textarea {
 		margin: 0;
 		padding-top: 10px;
 	}
-	.flex-33 {
+	.max-width-33, .max-width-50, .max-width-20{
 		max-width: 100%;
+	}
+	.width-75{
+		width: 100%;
 	}
 	.icon {
 		font-size: 15px;
@@ -700,6 +711,9 @@ textarea {
 	.category-button {
 		font-size: 16px;
 	}
+	#productsInCart .category-button {
+		font-size: 11px;
+	}
 	.btn {
 		font-size: 9px;
 		padding: 10px 15px 10px 15px;
@@ -711,9 +725,6 @@ textarea {
 	}
 	#product li {
 		font-size: 11px;
-	}
-	#dimensionPrice .flex-50 {
-		max-width: 100%;
 	}
 	#productLocation span {
 		font-size: 14px;
@@ -746,11 +757,20 @@ textarea {
 		padding: 0 0 0 10px;
 		margin: 0;
 	}
-
+	#contact-form .layout-row{
+		flex-wrap: wrap;
+	}
+	.form-control{
+		padding: 6px;
+		max-width: 20%;
+	}
+	#cart-container{
+		padding: 0;
+	}
 }
 
 @media all and (max-width: 1000px) and (min-width: 760px) {
-	.flex-33 {
+	.max-width-33{
 		max-width: 50%;
 	}
 	#searchValue {

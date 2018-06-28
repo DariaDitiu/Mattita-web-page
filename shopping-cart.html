@@ -65,26 +65,62 @@
             </ul>
          </nav>
       </header>
-      <section>
-         <a id="newCollection" href="products.html">
-         <img class="image-container no-border" src="./images/new_collection.png" alt="New Collection"/>
-         </a>
-      </section>
-      <section>
-         <h2 id="rec-prod-label" class="align-center padding-10">Recommended Products</h2>
-         <div id="recommendedProducts" class="flex layout-row table no-margin">
+      <div class="border-bottom">
+         <div id="cart-container" class="contact-container padding-10 width-75">
+            <span id="errorText" class="error-text"></span>
+            <form id="buy-form" method="post" action="cart.php">
+               <div class="form-group">
+                  <h3 class="light-brown-bkgd padding-10">Shopping Cart</h4>
+                  <ul id="productsInCart" class="list-style-type">
+                  </ul>
+               </div>
+               <div class="flex">
+                  <h3 class="light-brown-bkgd padding-10">Your details</h4>
+                  <div class="layout-row">
+                     <div class="flex-x max-width-50 layout-column padding-5">
+                        <label for="firstName" class= "padding-10 font-16 no-margin">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Your first name..." required>
+                     </div>
+                     <div class="flex-x max-width-50 layout-column padding-5">
+                        <label for="lastName" class= "padding-10 font-16 no-margin">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Your last name..." required>
+                     </div>
+                  </div>
+                  <div class="layout-row">
+                     <div class="flex-x max-width-50 layout-column padding-5">
+                        <label for="email" class= "padding-10 font-16">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email..." required>
+                        </div>
+                     <div class="flex-x max-width-50 layout-column padding-5">
+                       <label for="phone" class= "padding-10 font-16">Phone number</label>
+                       <input type="text" id="phone" name="phone" placeholder="Your phone number..." required>
+                     </div>
+                  </div>
+                  <label for="address" class= "padding-10 font-16">Shipping address</label>
+                  <input type="text" id="address" name="address" placeholder="Your address..." required>
+                  <div class="layout-row">
+                      <div class="flex-x max-width-50 layout-column padding-5">
+                        <label for="city" class= "padding-10 font-16">City</label>
+                        <input type="text" id="city" name="city" placeholder="Your city..." required>
+                     </div>
+                     <div class="flex-x max-width-50 layout-column padding-5">
+                        <label for="region" class= "padding-10 font-16">Region</label>
+                        <input type="text" id="region" name="region" placeholder="Your region..." required>
+                     </div>
+                  </div>
+                  <label for="comments" class= "padding-10 font-16">Comments</label>
+                  <textarea id="comments" name="comments" placeholder="Write something..." class="no-margin message-height"></textarea>
+                  <input id="submitOrder" type="submit" name="submit" class="btn btn-primary padding-top-bottom-10 margin-top-10 margin-bottom-10" value="Send">
+               </div>
+               <div>
+                  <p>Shipping: courier. The transport is paid separately, depending on the weight of the package, the transport fee can reach a value of about 20 RON</p>
+                  <p>Payment: cash on delivery</p>
+                  <p>Delivery time: maximum 10 working days</p>
+               </div>
+            </form>
+            <span id="successSend" class="success-text"></span>
          </div>
-         <div class="flex layout-row align-center max-width-100 table margin-bottom-10 margin-top-30">
-            <a id="view-prod-button" class="btn btn-primary table-cell" href='products.html'>View all products</a>
-         </div>
-      </section>
-      <section id="about-me">
-         <div class="flex layout-column border-bottom">
-            <h2 id="label-about-me" class="align-center padding-10">About me</h2>
-            <p id="desc-about-me" class="align-center align-center align-justify">We combine super-fresh organic sweet peas with a touch of salt, sugar, cream, and fresh mint to pump up the summer flavor. Every pale green scoop of this herbal ice cream captures the sweetness of baby peas from Rancho La Familia in Santa Maria and fresh mint from Kenter Canyon Farms. We love Rancho La Familia because they have created a truly community farm in every sense of the word, honoring the organic crops they grow, their neighbors, their farmers market family, and even the beneficial bugs on their land. Kenter Canyon Farms is legendary in the food and farming worlds: they introduced America to spring lettuce mix (mesclun) by growing it first for legendary chef Alice Waters at Chez Panisse!</p>
-            <p id="welcome" class="align-center line-height-1 align-center">Welcome!</p>
-         </div>
-      </section>
+      </div>
       <section class="align-center light-brown-bkgd padding-top-10">
          <h3 id="follow-us">Follow Us</h3>
          <div class="flex layout-row table align-center no-margin">
