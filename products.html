@@ -31,10 +31,10 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-right">
                      <li class="border-bottom">
-                        <button id="ro" type = "button" class="category-button padding-10">Romana</button>
+                        <button id="ro" type = "button" class="category-button padding-10 width-100">Romana</button>
                      </li>
                      <li>
-                        <button id="en" type = "button" class="category-button padding-10">English</button>
+                        <button id="en" type = "button" class="category-button padding-10 width-100">English</button>
                      </li>
                   </ul>
                </div>
@@ -67,7 +67,9 @@
          </nav>
       </header>
       <section>
-         <img id="products-image" class="no-border image-container" src="./images/main_oil.jpg" alt="Product image from specific category">
+         <div class="image-container no-border">  
+            <img id="products-image" class="featured-image" src="./images/main_oil.jpg" alt="Product image from specific category"/>
+         </div>
       </section>
       <section>
          <div id="categories-container">
@@ -94,7 +96,7 @@
             </div>
          </div>
       </section>
-      <section class="flex layout-column table border-bottom">
+      <section class="flex layout-column table inline-table border-bottom align-center">
          <div id="productsByCategory" class="flex layout-row table">
          </div>
          <ul id="pagination" class="pagination align-center no-top-margin">

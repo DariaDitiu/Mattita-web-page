@@ -361,6 +361,10 @@ a:active {
 	box-sizing: border-box;
 }
 
+.inline-table{
+	display: inline-table;
+}
+
 .max-width-100 {
 	max-width: 100%;
 }
@@ -465,8 +469,30 @@ ul {
 .image-container {
 	width: 100%;
 	height: 43vh;
+}
+
+.featured-image{
+	width: 100%;
+	height: 43vh;
 	overflow: hidden;
 	object-fit: cover;
+}
+
+.image-container-columns{
+	width: 100%;
+	height: 20vh;
+}
+
+.featured-image-columns{
+	width: 100%;
+	height: 20vh;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.custom-object-fit {
+  background-size: cover;
+  background-position: center center;
 }
 
 .img-cover {
@@ -702,9 +728,6 @@ textarea {
 	#searchValue {
 		font-size: 15px;
 	}
-	.image-container {
-		height: 30vh;
-	}
 	.fa-icon {
 		height: 15px
 	}
@@ -834,6 +857,9 @@ textarea {
 	}
 	#productName p {
 		font-size: 21px;
+	}
+	.image-container-columns, .featured-image-columns{
+		height: 30vh;
 	}
 	.height-20vh {
 		height: 30vh;

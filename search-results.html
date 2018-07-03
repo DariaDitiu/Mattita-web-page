@@ -14,7 +14,7 @@
       <![endif]-->
    </head>
    <body onunload="clearCheckBoxes()" onbeforeunload="clearCheckBoxes()">
-       <header class="align-center border-bottom margin-top-10">
+      <header class="align-center border-bottom margin-top-10">
          <div class="flex layout-row table padding-top-bottom-10 align-flex-end no-margin no-padding border-bottom">
             <div class="flex-x max-width-80 table-cell no-margin">
                <div class="flex layout-row no-flex-wrap table no-margin">
@@ -30,12 +30,13 @@
                   <span class="glyphicon glyphicon glyphicon-globe icon"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="border-bottom">
-                     <button id="ro" type = "button" class="category-button padding-10">Romana</button>
-                  </li>
-                  <li>
-                     <button id="en" type = "button" class="category-button padding-10">English</button>
-                  </li>
+                     <li class="border-bottom">
+                        <button id="ro" type = "button" class="category-button padding-10 width-100">Romana</button>
+                     </li>
+                     <li>
+                        <button id="en" type = "button" class="category-button padding-10 width-100">English</button>
+                     </li>
+                  </ul>
                </div>
             </div>
             <div class="flex-x max-width-10 table-cell">
@@ -65,15 +66,13 @@
             </ul>
          </nav>
       </header>
- 
-       <section class="flex layout-column table border-bottom">
+      <section class="flex layout-column table border-bottom">
          <h3 id="searchResultsLabel">Search Results</h3>
          <div id="results" class="flex layout-row table align-center">
          </div>
          <ul id="searchPagination" class="pagination align-center no-top-margin">
          </ul>
       </section>
-      
       <section class="align-center light-brown-bkgd padding-top-10">
          <h3 id="follow-us">Follow Us</h3>
          <div class="flex layout-row table align-center no-margin">

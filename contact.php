@@ -67,7 +67,7 @@
       <meta name="description" content="Conceptul salt & mint este acela de a .....">
       <meta name="keywords" content="salt, mint">
       <meta name="author" content="Salt and mint">
-      <title>Salt and Mint | Product Description </title>
+      <title>Salt and Mint | Welcome </title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="./css/style.css">
       <!--[if IE 9]>
@@ -91,12 +91,13 @@
                   <span class="glyphicon glyphicon glyphicon-globe icon"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="border-bottom">
-                     <button id="ro" type = "button" class="category-button padding-10">Romana</button>
-                  </li>
-                  <li>
-                     <button id="en" type = "button" class="category-button padding-10">English</button>
-                  </li>
+                     <li class="border-bottom">
+                        <button id="ro" type = "button" class="category-button padding-10 width-100">Romana</button>
+                     </li>
+                     <li>
+                        <button id="en" type = "button" class="category-button padding-10 width-100">English</button>
+                     </li>
+                  </ul>
                </div>
             </div>
             <div class="flex-x max-width-10 table-cell">
@@ -135,7 +136,7 @@
                   <input type="text" id="name" name="name" placeholder="Your name..." value="<?php echo isset($_POST['name']) ? $name : ''; ?>" required>
                   <label id="email-label" for="email" class= "padding-10 font-16">Email</label>
                   <input type="text" id="email" name="email" placeholder="Your email..." class="no-margin" value="<?php echo isset($_POST['email']) ? $visitor_email : ''; ?>" required>
-                  <label id="mess-label" for="subject" class= "padding-10 font-16">Message</label>
+                  <label id="mess-label" for="message" class= "padding-10 font-16">Message</label>
                   <textarea id="message" name="message" placeholder="Write something..." class="no-margin message-height" required><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
                   <input id="submit" type="submit" name="submit" class="btn btn-primary padding-top-bottom-10 margin-top-10 margin-bottom-10" value="Send">
                </form>
