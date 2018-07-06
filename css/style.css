@@ -5,12 +5,13 @@ body {
 	padding: 0px;
 	margin-left: 2%;
 	margin-right: 2%;
-	background-color: #f4f4f4;
+	background-color: #ffffff;
+	color: #666;
 }
 
 .border-bottom {
-	border-bottom: #d8d8d8 1px solid;
-	margin-bottom: 2px;
+	border-bottom: #ffffff 0px solid;
+	margin-bottom: 0px;
 }
 
 header a:hover {
@@ -143,7 +144,7 @@ a:active {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 5px;
-	height: 50px;
+	height: 60px;
 }
 
 .category-list {
@@ -171,7 +172,7 @@ a:active {
 	background: transparent;
 	border: none;
 	outline: none;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .category-button:hover,
@@ -266,7 +267,7 @@ a:active {
 }
 
 .margin-bottom-10 {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .margin-top-10 {
@@ -298,7 +299,7 @@ a:active {
 }
 
 .padding-top-bottom-10 {
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 	padding-top: 10px;
 }
 
@@ -726,7 +727,7 @@ textarea {
 		padding: 0;
 	}
 	#searchValue {
-		font-size: 15px;
+		font-size: 25px;
 	}
 	.fa-icon {
 		height: 15px
@@ -812,7 +813,7 @@ textarea {
 
 @media all and (min-width: 1400px) {
 	.menu-text {
-		font-size: 27px;
+		font-size: 20px;
 	}
 	.menu-container {
 		line-height: 50px;
@@ -823,7 +824,7 @@ textarea {
 		font-size: 25px;
 	}
 	#searchValue {
-		font-size: 25px;
+		font-size: 20px;
 	}
 	p {
 		font-size: 20px;

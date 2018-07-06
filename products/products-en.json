@@ -32,8 +32,8 @@
 		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Necklace cord is about 70cm long and 4mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
 		"price": "130 lei",
 		"dimensions": "Pendant: 4cm height x 4.5cm width x 7mm thickness; Necklace: 70cm long and 3mm thickness",
-		"image": "./images/Tala.jpg",
-		"imageDetailed": ["./images/1_Tala.jpg", "./images/2_Tala.jpg", "./images/box.jpg"],
+		"image": "./images/1_Tala.jpg",
+		"imageDetailed": ["./images/2_Tala.jpg", "./images/box.jpg"],
 		"newCollection": "true",
 		"recommendedProduct": "false"
 	},
@@ -170,7 +170,7 @@
 	{
 		"type": "furniture",
 		"id": "keyHolder",
-		"name": "Mountain Key Holder,
+		"name": "Mountain Key Holder",
 		"description": "This unique Mountain Key Holder makes a great housewarming or newlywed gift. It would be a great addition to any household, garage or office. Each Mountain Key Holder is made with our own hands in our workshop from natural beech wood, put together using friendly materials and a lot of passion.",
 		"details": ["The mountain key holder is made from beech wood and has a coat of a non-toxic Tung oil.", "It comes with 5 key-ring to hang all your keys from.", "The mountain key holder is ready to be hanged on the wall and the package contains mounted hangers."],
 		"price": "84 lei",
@@ -267,7 +267,7 @@
 		"price": "123 RON",
 		"dimensions": "400g",
 		"image": "./images/sales.jpg",
-		"imageDetailed": ["./images/wood.jpg""],
+		"imageDetailed": ["./images/wood.jpg"],
 		"newCollection": "false",
 		"recommendedProduct": "false"
 	},
