@@ -34,7 +34,7 @@ function createDynamicSections(language) {
             } else {
                 var category = localStorage.getItem('categoryType');
                 if(jQuery.isEmptyObject(category)){
-                    category = 'oil';
+                    category = 'jewellery';
                 }
                 createProductByCatSection(prodByCategory, category);
             }
@@ -123,20 +123,20 @@ function createProductByCatSection(prodByCategory, category) {
 
 function handleCategoriesEvents(prodByCategory) {
     var prodByCat = '#productsByCategory';
-    $('#oil').click(function () {
-        changeProductByType(prodByCategory, 'oil', prodByCat);
-    });
-    $('#scrub').click(function () {
-        changeProductByType(prodByCategory, 'scrub', prodByCat);
-    });
-    $('#cosmetics').click(function () {
-        changeProductByType(prodByCategory, 'cosmetics', prodByCat);
-    });
-    $('#food').click(function () {
-        changeProductByType(prodByCategory, 'food', prodByCat);
-    });
     $('#jewellery').click(function () {
         changeProductByType(prodByCategory, 'jewellery', prodByCat);
+    });
+    $('#furniture').click(function () {
+        changeProductByType(prodByCategory, 'furniture', prodByCat);
+    });
+    $('#decorations').click(function () {
+        changeProductByType(prodByCategory, 'decorations', prodByCat);
+    });
+    $('#toys').click(function () {
+        changeProductByType(prodByCategory, 'toys', prodByCat);
+    });
+    $('#sales').click(function () {
+        changeProductByType(prodByCategory, 'sales', prodByCat);
     });
 };
 

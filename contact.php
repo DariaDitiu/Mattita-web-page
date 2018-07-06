@@ -82,7 +82,7 @@
                   <a id="search" class="icon-container" href="search-results.html">
                   <span class="glyphicon glyphicon-search icon"></span>
                   </a>  
-                  <input id="searchValue" type="text" name="search" placeholder="Type here to search">
+                  <input id="searchValue" type="text" name="search" placeholder="Search">
                </div>
             </div>
             <div class="flex-x max-width-10 table-cell">
