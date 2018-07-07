@@ -1,5 +1,5 @@
 {
-	"searchValue" : "Type here to search",
+	"searchValue" : "Search",
 	"show-menu-label" : "Show Menu",
 	"home" : "Home",
 	"products" : "Products",
@@ -12,7 +12,7 @@
 	"toys" : "Toys",
 	"sale" : "Sale",
 	"label-about-me" : "About me",
-	"desc-about-me" : "Hello, I am Martina and I love to create unique and beautiful wooden objects. I like to value the beauty of wood, beauty captured in its natural texture, in shapes, colours, ideas. Matitta Kayu was born out of a desire to play with wood, to have a hobby, to find happiness after a day of work. It is a wonderful feeling that we all will be happy to discover. "The way we spend our time defines who we are." — JONATHAN ESTRIN",
+	"desc-about-me" : "Hello, I am Martina and I love to create unique and beautiful wooden objects. I like to value the beauty of wood, beauty captured in its natural texture, in shapes, colours, ideas. Matitta Kayu was born out of a desire to play with wood, to have a hobby, to find happiness after a day of work. It is a wonderful feeling that we all will be happy to discover. \"The way we spend our time defines who we are.\" — JONATHAN ESTRIN",
 	"welcome" : "Welcome!",
 	"follow-us" : "Follow Us",
 	"name" : "Your name...",
@@ -44,6 +44,5 @@
 	"delivery-time" : "Delivery time: maximum 4 working days",
 	"addToCart" : "Add to Cart",
 	"your-details" : "Your Details",
-	"submitOrder" : "Send",
 	"no-results" : "Sorry, we couldn’t find any results."	
 }

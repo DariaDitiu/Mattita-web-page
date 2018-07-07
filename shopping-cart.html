@@ -48,9 +48,9 @@
             </div>
          </div>
          <div id = "logo-container" class="flex table layout-row padding-top-bottom-10 no-margin">
-            <img id = "logo" class="width-25 align-center auto-margin" src="./images/new_logo.png" alt="Matitta logo">
+            <img id = "logo" class="width-10 align-center auto-margin" src="./images/new_logo.png" alt="Matitta logo">
          </div>
-         <nav class="margin-top-10 light-brown-bkgd">
+         <nav class="margin-top-10 gainsboro-bkgd">
             <label id="show-menu-label" for="show-menu" class="show-menu menu-text display-none">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
@@ -71,12 +71,12 @@
             <span id="errorText" class="error-text"></span>
             <form id="buy-form" method="post" action="cart.php">
                <div class="form-group">
-                  <h3 id="shopping-cart-label" class="light-brown-bkgd padding-10">Shopping Cart</h3>
+                  <h3 id="shopping-cart-label" class="gainsboro-bkgd padding-10">Shopping Cart</h3>
                   <ul id="productsInCart" class="list-style-type">
                   </ul>
                </div>
                <div class="flex">
-                  <h3 id="your-details" class="light-brown-bkgd padding-10">Your details</h3>
+                  <h3 id="your-details" class="gainsboro-bkgd padding-10">Your details</h3>
                   <div class="layout-row">
                      <div class="flex-x max-width-50 layout-column padding-5">
                         <label id="first-name-label" for="firstName" class="padding-10 font-16 no-margin">First Name</label>
@@ -113,7 +113,7 @@
                   <textarea id="comments" name="comments" placeholder="Write something..." class="no-margin message-height"></textarea>
                   <input id="submitOrder" type="submit" name="submit" class="btn btn-primary padding-top-bottom-10 margin-top-10 margin-bottom-10" value="Send">
                </div>
-               <div>
+               <div class="padding-top-10">
                   <p id="shipping-info">Shipping method: courier. The shipping in Romania is 20 lei, in any city within the coverage area of courier companies. Exception city Cluj-Napoca where the shipping is free.</p>
                   <p id="payment">Payment: cash on delivery</p>
                   <p id="delivery-time">Delivery time: maximum 4 working days</p>
@@ -122,7 +122,7 @@
             <span id="successSend" class="success-text"></span>
          </div>
       </div>
-      <section class="align-center light-brown-bkgd padding-top-10">
+       <footer class="align-center gainsboro-bkgd padding-top-10 margin-top-30">
          <h3 id="follow-us">Follow Us</h3>
          <div class="flex layout-row table align-center no-margin">
             <div class="flex-x max-width-10 table-cell">
@@ -133,9 +133,7 @@
                </div>
             </div>
          </div>
-      </section>
-      <footer>
-         <p class="align-right light-brown-bkgd padding-10"> Matitta, Copyright &copy; 2018 </p>
+         <p class="align-right padding-10"> Matitta, Copyright &copy; 2018 </p>
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

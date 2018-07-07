@@ -1,3 +1,6 @@
+html {
+	height: 100%;
+}
 body {
 	font-family: Georgia, Helvelica, sans-serif;
 	font-size: 15px;
@@ -7,6 +10,18 @@ body {
 	margin-right: 2%;
 	background-color: #ffffff;
 	color: #666;
+	
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.content{
+	flex: 1 0 auto;
+}
+
+footer{
+	flex-shrink: 0;
 }
 
 .border-bottom {
@@ -32,8 +47,8 @@ a:active {
 
 .menu-text {
 	text-decoration: none;
-	text-transform: capitalize ;
-	font-size: 15px;
+	text-transform: capitalize;
+	font-size: 20px;
 }
 
 .menu-container {
@@ -47,11 +62,11 @@ a:active {
 	padding: 0 0 10px 0;
 }
 
-.brown-color {
-	color: #666;
+.light-brown-bkgd {
+	background-color: #DCDCDC;
 }
 
-.light-brown-bkgd {
+.gainsboro-bkgd{
 	background-color: #DCDCDC;
 }
 
@@ -266,10 +281,6 @@ a:active {
 	margin-top: 0;
 }
 
-.margin-bottom-10 {
-	margin-bottom: 30px;
-}
-
 .margin-top-10 {
 	margin-top: 10px;
 }
@@ -299,7 +310,7 @@ a:active {
 }
 
 .padding-top-bottom-10 {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	padding-top: 10px;
 }
 
@@ -418,7 +429,7 @@ a:active {
 	width: 100%;
 }
 
-.width-25 {
+.width-10 {
 	width: 10%;
 }
 
@@ -680,6 +691,8 @@ textarea {
 		left: 0;
 		right: 0;
 		background: #f4f4f4;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 	header ul li,
 	li a {
@@ -688,7 +701,7 @@ textarea {
 	li {
 		font-size: 11px;
 	}
-	p {
+	p, a {
 		font-size: 11px;
 	}
 	h2,
@@ -727,7 +740,7 @@ textarea {
 		padding: 0;
 	}
 	#searchValue {
-		font-size: 25px;
+		font-size: 15px;
 	}
 	.fa-icon {
 		height: 15px
@@ -790,6 +803,12 @@ textarea {
 	}
 	#cart-container{
 		padding: 0;
+	}
+	.width-10{
+		width: 25%;
+	}
+	.featured-image, .image-container {
+		height: 25vh;
 	}
 }
 

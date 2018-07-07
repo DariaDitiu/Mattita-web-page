@@ -1,5 +1,5 @@
 [	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "tiana",
 		"name": "Tiana | Triangle pendant from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewelry. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -12,7 +12,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "kaya",
 		"name": "Kaya | Necklace from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewellery. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -25,7 +25,7 @@
 		"recommendedProduct": "true"
 	},
 	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "tala",
 		"name": "Tala | Necklace from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewellery. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -38,7 +38,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "roa",
 		"name": "Roa | Necklace from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewellery. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -51,7 +51,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "noa",
 		"name": "Noa | Necklace from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewellery. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -64,7 +64,7 @@
 		"recommendedProduct": "true"
 	},
 	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "mali",
 		"name": "Mali | Necklace from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewellery. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -77,7 +77,7 @@
 		"recommendedProduct": "true"
 	},
 	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "maya",
 		"name": "Maya | Necklace from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewellery. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -90,7 +90,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "bijuterii",
+		"type": "jewellery",
 		"id": "bantiwa",
 		"name": "Bantiwa | Necklace from colored pencils",
 		"description": "Take a step into the world of colours and imagination with Matitta Kayu jewellery. Each piece in our collections is crafted out of colored pencils, put together using friendly materials and a lot of passion.",
@@ -103,7 +103,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "triangle",
 		"name": "Triangle",
 		"description": "The unique triangle shelf etc.",
@@ -116,7 +116,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "hexagonal",
 		"name": "Hexagonal",
 		"description": "The unique hexagonal shelf etc.",
@@ -129,7 +129,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "mountainShelf",
 		"name": "Mountain Shelf",
 		"description": "The unique mountain shelf etc.",
@@ -142,7 +142,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "diamond",
 		"name": "Diamond",
 		"description": "The unique diamond shelf etc.",
@@ -155,7 +155,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "bloom",
 		"name": "Bloom",
 		"description": "The unique bloom shelf etc.",
@@ -168,9 +168,9 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "keyHolder",
-		"name": "Mountain Key Holder,
+		"name": "Mountain Key Holder",
 		"description": "This unique Mountain Key Holder makes a great housewarming or newlywed gift. It would be a great addition to any household, garage or office. Each Mountain Key Holder is made with our own hands in our workshop from natural beech wood, put together using friendly materials and a lot of passion.",
 		"details": ["The mountain key holder is made from beech wood and has a coat of a non-toxic Tung oil.", "It comes with 5 key-ring to hang all your keys from.", "The mountain key holder is ready to be hanged on the wall and the package contains mounted hangers."],
 		"price": "84 lei",
@@ -181,7 +181,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "coatHanger",
 		"name": "Coat Hanger",
 		"description": "This unique coat hanger makes a great housewarming or newlywed gift. It would be a great addition to any household, garage or office. Each coat hanger is made with our own hands in our workshop from natural beech wood, put together using friendly materials and a lot of passion.",
@@ -194,7 +194,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "bikeRack",
 		"name": "Bike Rack",
 		"description": "The unique bike rack is a board with a lot of possibilities, you can decorate it the way you want or need. It is a place where you can storage your bike and equipment (jacket, helmet, bike shoes, backpack). You can have all in one place, easy to take when you want to escape on a quick bike ride after work.",
@@ -207,7 +207,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "mobilier",
+		"type": "furniture",
 		"id": "skiRack",
 		"name": "Ski Rack",
 		"description": "The unique ski rack is a board with a lot of possibilities, you can decorate it the way you want or need. It is a place where you can storage your ski and equipment (jacket, helmet, poles, backpack). You can have all in one place, easy to take when you want to a ski weekend.",
@@ -220,7 +220,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "jucarii",
+		"type": "toys",
 		"id": "X0",
 		"name": "Wooden Tic-Tac-Toe game",
 		"description": "A game that never gets old! This classy and fun Tic Tac Toe game is perfect for your home and family. You can use it for fun and games or keep it as fun home decor. Tic tac toe makes an excellent travel game, a gifts, or just a way of developing your strategy skills.",
@@ -233,7 +233,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "jucarii",
+		"type": "toys",
 		"id": "sewing",
 		"name": "Sewing Embroidery Board kit",
 		"description": "Embroidery lacing activity board is a great way for your child to develop fine motor skills and also fun toy to play with. It is all natural hand made item and finishing is non-toxic Tung oil.",
@@ -246,7 +246,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "jucarii",
+		"type": "toys",
 		"id": "rubberBord",
 		"name": "Rubber band board",
 		"description": "This is great learning toy for kids aged 5+. It helps promote creativity, fine motor skills and is great toy to learn numbers, letters and geometric object shapes.",
@@ -259,7 +259,7 @@
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "promotii",
+		"type": "sales",
 		"id": "salesProducts1",
 		"name": "Sale1",
 		"description": "Fior di Sale comes from the salt plains of Tripani, where the wind blowing over the plains crystallizes the salt, which is then harvested manually. With lemon and peppermint essential oils, add this Fior di Sale to meat, fish, or vegetable dishes after cooking. Savor the fresh scent as you experiment with new combinations.",
@@ -267,12 +267,12 @@
 		"price": "123 RON",
 		"dimensions": "400g",
 		"image": "./images/sales.jpg",
-		"imageDetailed": ["./images/wood.jpg""],
+		"imageDetailed": ["./images/wood.jpg"],
 		"newCollection": "false",
 		"recommendedProduct": "false"
 	},
 	{
-		"type": "promotii",
+		"type": "sales",
 		"id": "saleProducts2",
 		"name": "Sale2",
 		"description": "Fior di Sale comes from the salt plains of Tripani, where the wind blowing over the plains crystallizes the salt, which is then harvested manually. With lemon and peppermint essential oils, add this Fior di Sale to meat, fish, or vegetable dishes after cooking. Savor the fresh scent as you experiment with new combinations.",

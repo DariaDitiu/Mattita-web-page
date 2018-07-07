@@ -110,12 +110,9 @@ function createNewCollectionSection(newCollection) {
 }
 
 function createProductByCatSection(prodByCategory, category) {
-    for (var i = 0; i < prodByCategory.length; i++) {
-        if (prodByCategory[i].type === category) {
-            changeProductsPhoto('#products-image', prodByCategory[i].image);
-        }
-        break;
-    }
+    var mainPhoto = getMainPhoto(prodByCategory, category);
+    changeProductsPhoto('#products-image', mainPhoto);
+
     fillProductInformation(prodByCategory, category, '#productsByCategory', false);
     var categoryType = 'categoryType';
     changeActiveButton(categoryType, category, creatElementId(category));
@@ -225,6 +222,8 @@ function changeProductByType(prodByCategory, productType, idDIV) {
     var category = 'categoryType';
     resetContainer(idDIV);
     changeActiveButton(category, productType, creatElementId(productType));
+    var mainPhoto = getMainPhoto(prodByCategory, productType);
+    changeProductsPhoto('#products-image', mainPhoto);
     fillProductInformation(prodByCategory, productType, idDIV, false);
 }
 
@@ -756,6 +755,14 @@ function changeActiveButton(key, value, element) {
     }
     localStorage.setItem(key, value);
     $(element).addClass('active');
+}
+
+function getMainPhoto(prodByCategory, category){
+    for (var i = 0; i < prodByCategory.length; i++) {
+        if (prodByCategory[i].type === category) {
+            return prodByCategory[i].image;
+        }
+    }
 }
 
 function changeProductsPhoto(element, image) {

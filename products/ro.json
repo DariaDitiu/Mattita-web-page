@@ -12,7 +12,7 @@
 	"jucării" : "Jucării",
 	"promotii" : "Promoții",
 	"label-about-me" : "Despre mine",
-	"desc-about-me" : "Buna, eu sunt Martina și îmi place să creez lucruri unicate si frumoase din lemn. Îmi place să pun în valoare frumusețea lemnului, frumusețe surprinsă în textura lui naturala, în forme, culori, idei. Matitta Kayu s-a născut din dorința de a lucra cu lemnul, de a avea un hobby, de a găsi fericirea după o zi de munca. Este un sentiment minunat pe care toți am fi fericiți să îl descoperim. "The way we spend our time defines who we are." — JONATHAN ESTRIN",
+	"desc-about-me" : "Buna, eu sunt Martina și îmi place să creez lucruri unicate si frumoase din lemn. Îmi place să pun în valoare frumusețea lemnului, frumusețe surprinsă în textura lui naturala, în forme, culori, idei. Matitta Kayu s-a născut din dorința de a lucra cu lemnul, de a avea un hobby, de a găsi fericirea după o zi de munca. Este un sentiment minunat pe care toți am fi fericiți să îl descoperim. \"The way we spend our time defines who we are.\" — JONATHAN ESTRIN",
 	"welcome" : "Bine ai venit!",
 	"follow-us" : "Urmăreşte-ne",
 	"name" : "Nume...",
@@ -48,6 +48,5 @@
 	"delivery-time" : "Termen de livrare: maxim 4 zile lucratoare",
 	"addToCart" : "Adaugă în coş",
 	"your-details" : "Detalii livrare",
-	"submitOrder" : "Trimite",
 	"no-results" : " Ne pare rău, nici un rezultat nu a fost găsit."		
 }
