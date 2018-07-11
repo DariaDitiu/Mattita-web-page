@@ -8,7 +8,6 @@ body {
 	padding: 0px;
 	margin-left: 2%;
 	margin-right: 2%;
-	background-color: #ffffff;
 	color: #666;
 	
 	display: flex;
@@ -25,12 +24,12 @@ footer{
 }
 
 .border-bottom {
-	border-bottom: #ffffff 0px solid;
-	margin-bottom: 0px;
+	border-bottom: #DCDCDC 1px solid;
+	margin-bottom: 10px;
 }
 
 header a:hover {
-	color: #2a2c38;
+	color: #666;
 	font-weight: 700;
 }
 
@@ -62,20 +61,12 @@ a:active {
 	padding: 0 0 10px 0;
 }
 
-.light-brown-bkgd {
-	background-color: #DCDCDC;
-}
-
 .gainsboro-bkgd{
 	background-color: #DCDCDC;
 }
 
-.brown-color{
-	color: #666;
-}
-
 .gray-color {
-	color: #030303;
+	color: #666;
 }
 
 .btn {
@@ -220,7 +211,7 @@ a:active {
 	color: transparent;
 }
 
-.fa-icon {
+.follow-icon {
 	height: 30px
 }
 
@@ -329,6 +320,10 @@ a:active {
 .padding-left-right-30 {
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px;
 }
 
 .no-left-padding {
@@ -746,8 +741,9 @@ textarea {
 	#searchValue {
 		font-size: 15px;
 	}
-	.fa-icon {
-		height: 15px
+	.follow-icon {
+		height: 15px;
+		padding-left: 10px;
 	}
 	.category-button {
 		font-size: 16px;
@@ -864,7 +860,7 @@ textarea {
 	#productsByCategory a {
 		font-size: 22px;
 	}
-	.fa-icon {
+	.follow-icon {
 		height: 41px;
 	}
 	.min-width-100 {

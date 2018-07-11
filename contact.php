@@ -91,7 +91,7 @@
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   <span class="glyphicon glyphicon glyphicon-globe icon"></span>
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-right">
+                  <ul class="dropdown-menu dropdown-menu-right float-right">
                      <li class="border-bottom">
                         <button id="ro" type = "button" class="category-button padding-10 width-100">Romana</button>
                      </li>
@@ -112,7 +112,7 @@
          <div id = "logo-container" class="flex table layout-row padding-top-bottom-10 no-margin">
             <img id = "logo" class="width-10 align-center auto-margin" src="./images/new_logo.png" alt="Matitta logo">
          </div>
-         <nav class="margin-top-10 gainsboro-bkgd">
+         <nav class="margin-top-10">
             <label id="show-menu-label" for="show-menu" class="show-menu menu-text display-none">Show Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul class="no-padding no-margin-top-bottom list-style-type" id="menu">
@@ -123,7 +123,7 @@
                   <a id="products" class="gray-color menu-text inline-block align-center menu-container" href="products.html">Products</a>
                </li>
                <li class="inline-block align-left">
-                  <a id="contact" class="brown-color demi-bold menu-text inline-block align-center menu-container" href="contact.php">Contact</a>
+                  <a id="contact" class="demi-bold gray-color menu-text inline-block align-center menu-container" href="contact.php">Contact</a>
                </li>
             </ul>
          </nav>
@@ -146,13 +146,20 @@
          </div>
       </section>
    </div>
-       <footer class="align-center gainsboro-bkgd padding-top-10 margin-top-30">
+       <footer class="align-center padding-top-10 margin-top-30">
          <h3 id="follow-us">Follow Us</h3>
          <div class="flex layout-row table align-center no-margin">
             <div class="flex-x max-width-10 table-cell">
                <div class="icon-container">
                   <a href="https://www.facebook.com/pg/MatittaKayu">
-                  <img class="fa-icon" src="./images/F_icon.svg" alt="Facebook logo"/>
+                     <img class="follow-icon float-right" src="./images/F_icon.png" alt="Facebook logo"/>
+                  </a>
+               </div>
+            </div>
+            <div class="flex-x max-width-10 table-cell">
+               <div class="icon-container">
+                  <a href="https://www.instagram.com/matittakayu">
+                     <img class="follow-icon float-left" src="./images/Instagram_icon.png" alt="Instagram logo"/>
                   </a>
                </div>
             </div>

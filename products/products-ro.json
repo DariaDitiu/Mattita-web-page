@@ -32,8 +32,8 @@
 		"details": ["All accessories are from 925 sterling silver which will promise a lasting shine.", "Necklace cord is about 70cm long and 4mm thickness.", "The product comes with a beautiful handmade wooden box and can be the perfect gift.", "The color may be slightly different from the picture because of different display device."],
 		"price": "130 lei",
 		"dimensions": "Pendant: 4cm height x 4.5cm width x 7mm thickness; Necklace: 70cm long and 3mm thickness",
-		"image": "./images/Tala.jpg",
-		"imageDetailed": ["./images/1_Tala.jpg", "./images/2_Tala.jpg", "./images/box.jpg"],
+		"image": "./images/1_Tala.jpg",
+		"imageDetailed": ["./images/2_Tala.jpg", "./images/box.jpg"],
 		"newCollection": "true",
 		"recommendedProduct": "false"
 	},
