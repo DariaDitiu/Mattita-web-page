@@ -177,7 +177,7 @@ a:active {
 }
 
 .category-button {
-	color: #030303;
+	color: #666;
 	font-weight: normal;
 	background: transparent;
 	border: none;
@@ -486,7 +486,7 @@ ul {
 	width: 100%;
 	height: 43vh;
 	overflow: hidden;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .image-container-columns{
@@ -498,7 +498,7 @@ ul {
 	width: 100%;
 	height: 20vh;
 	overflow: hidden;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .custom-object-fit {

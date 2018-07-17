@@ -188,8 +188,8 @@ function addProductsToBeBought(products) {
                 createDynamicDiv('flex layout-row', id1, '', creatElementId(id));
                 createDynamicImg('flex-x max-width-20 margin-bottom-10', '', products[j].image, "Product Image", creatElementId(id1));
                 createDynamicDiv('flex-x max-width-40 layout-column', id3, '', creatElementId(id1));
-                createDynamicP('padding-left-15', products[j].name, creatElementId(id3));
-                createDynamicP('padding-left-15', products[j].dimensions, creatElementId(id3));
+                createDynamicP('padding-left-15 no-margin padding-top-10 demi-bold', products[j].name, creatElementId(id3));
+                createDynamicP('padding-left-15 no-margin', products[j].dimensions, creatElementId(id3));
                 $('<button/>', {
                     'class': 'category-button flex-x max-width-15',
                     text: 'Remove',
@@ -234,13 +234,13 @@ function fillProductInformation(products, productType, idDIV, isPagination) {
         resetContainer('#pagination');
     }
 
-    var productByType = [];
+    var productsByType = [];
     for (var i = 0; i < products.length; i++) {
         if (products[i].type === productType || productType === '') {
-            productByType.push(products[i]);
-            if (productByType.length <= 6) {
+            productsByType.push(products[i]);
+            if (productsByType.length <= 6) {
                 var id1 = products[i].id;
-                var id2 = id1 + "x" + i;
+                var id2 = id1 + "id" + i;
                 var id3 = id2 + i;
                 var id4 = id3 + i;
                 var id5 = id4 + i;
@@ -275,16 +275,16 @@ function fillProductInformation(products, productType, idDIV, isPagination) {
     }
 
     objectFitForIE();
-    var pag = productByType.length / 6;
-    if (productByType.length % 6 != 0) {
+    var pag = productsByType.length / 6;
+    if (productsByType.length % 6 != 0) {
         pag++;
     }
     if (pag >= 2) {
-        createPagination(pag, productByType, productType, idDIV);
+        createPagination(pag, productsByType, productType, idDIV);
     }
 };
 
-function createPagination(pag, productByType, productType, idDIV) {
+function createPagination(pag, productsByType, productType, idDIV) {
     for (i = 1; i <= pag; i++) {
         var id = i;
         createDynamicLi('page-item', id, '', '#pagination');
@@ -292,18 +292,23 @@ function createPagination(pag, productByType, productType, idDIV) {
             'class': 'page-button',
             text: "" + i + "",
             click: function (event) {
-                handleClickEventForPag(event, productByType, productType, idDIV);
+                handleClickEventForPag(event, productsByType, productType, idDIV);
             }
         }).appendTo(creatElementId(id));
     }
     changeActiveButton("paginationActive", 1, creatElementId(1));
 }
 
-function handleClickEventForPag(event, productByType, productType, idDIV) {
+function handleClickEventForPag(event, productsByType, productType, idDIV) {
     resetContainer(idDIV);
     var j = parseInt(event.currentTarget.textContent);
     changeActiveButton("paginationActive", j, creatElementId(j));
-    var prods = productByType.slice((j - 1) * 6 + 1, j * 6 + 1);
+    var prods;
+    if(j == 1){
+        prods = productsByType.slice((j - 1) * 6, j * 6);
+    }else{
+        prods = productsByType.slice((j - 1) * 6 + 1, j * 6);
+    }
     fillProductInformation(prods, productType, idDIV, true);
 }
 
@@ -343,7 +348,7 @@ function fillProductImages(product) {
     var images = product.imageDetailed;
     var i;
     for (i = 0; i < images.length; i++) {
-        var id1 = product.id + 'x' + i;
+        var id1 = product.id + 'id' + i;
         var id2 = id1 + 'x';
         var id3 = id2 + 'x';
         createDynamicDiv('flex-x max-width-33 padding-5 table-cell', id1, '', '#productImages');
@@ -373,7 +378,7 @@ function fillProductDetails(product) {
     for (var i = 0; i < product.details.length; i++) {
         createDynamicLi('align-justify no-margin', '', '' + product.details[i] + '', '#productDetails');
     }
-    createDynamicDiv('margin-top-30 flex relative-position layout-row', 'dimensionPrice', '', '#productDescription');
+    createDynamicDiv('margin-top-10 flex relative-position layout-row', 'dimensionPrice', '', '#productDescription');
     createDynamicDiv('flex-x max-width-50 layout-column', 'dimensions', '', '#dimensionPrice');
     createDynamicP('demi-bold no-margin padding-5', 'Dimensions', '#dimensions');
     createDynamicP('no-margin padding-5', '' + product.dimensions + '', '#dimensions');
@@ -774,8 +779,7 @@ function resetContainer(element) {
 }
 
 function getID(chosenProduct) {
-    var regex = /([^\^x]+)/;
-    var choseProductID = regex.exec(chosenProduct)[0];
+    var choseProductID = chosenProduct.split('id')[0];
     return choseProductID;
 }
 
