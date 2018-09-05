@@ -10,7 +10,7 @@ $mail->isSMTP(); // Set mailer to use SMTP
 $mail->Host       = 'smtp.gmail.com'; // Specify main and backup server
 $mail->SMTPAuth   = true; // Enable SMTP authentication
 $mail->Username   = $mailTo; // SMTP username
-$mail->Password   = 'S_o_n_g_o_c_u-12&28&87'; // SMTP password
+$mail->Password   = 'XXX'; // SMTP password
 $mail->SMTPSecure = 'ssl'; // Enable encryption, 'tsl' also accepted
 $mail->Port       = 465; //Set the SMTP port number - 587 for authenticated TLS
 
@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($firstName) || empty($lastName) || empty($visitor_email) || empty($phone) || empty($address) || empty($city) || empty($region) || empty($formProducts) || empty($formQuantity)) {
-        $msg = 'Please fill in all fields.';
+        $msg = 'Please fill in all fields or choose a product to be bought.';
     } else {
         if (filter_var($visitor_email, FILTER_VALIDATE_EMAIL) === false) {
             $msg = 'Please use a valid email.';

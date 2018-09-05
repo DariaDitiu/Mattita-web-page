@@ -9,7 +9,6 @@ body {
 	margin-left: 2%;
 	margin-right: 2%;
 	color: #666;
-	
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
@@ -116,6 +115,22 @@ a:active {
 	padding: 6px 12px 6px 12px;
 }
 
+.navigation-cart-circle {
+    background: #DCDCDC;
+    border: 1px solid #003b64;
+    border-radius: 80%;
+    color: #000;
+    position: relative;
+    right: 10px;
+    text-align: center;
+    bottom: 15px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    font-weight: 700;
+}
+
 #searchValue {
 	border: none;
 	background: transparent;
@@ -173,7 +188,7 @@ a:active {
 	cursor: grab;
 	cursor: -webkit-grab;
 	vertical-align: middle;
-	width: 150px;
+	width: 200px;
 }
 
 .category-button {
@@ -530,6 +545,30 @@ ul {
 	font-size: 18px;
 }
 
+.error::-webkit-input-placeholder {
+    color: red; /* WebKit, Blink, Edge */
+}
+
+.error:-moz-placeholder {
+    color: red; /* Mozilla Firefox 4 to 18 */
+}
+
+.error::-moz-placeholder {
+    color: red; /* Mozilla Firefox 19+ */
+}
+
+.error::-ms-input-placeholder {
+    color: red; /* Microsoft Edge */
+}
+
+.error:-ms-input-placeholder {
+    color: red; /* Internet Explorer 10-11 */
+}
+
+.error::placeholder {
+    color: red; /* Most modern browsers support this now. */
+}
+
 .success-text {
 	padding: 10px 10px 10px 0;
 	font-size: 18px;
@@ -731,6 +770,9 @@ textarea {
 	.width-75{
 		width: 100%;
 	}
+    .max-width-80{
+        max-width:70%;
+    }
 	.icon {
 		font-size: 15px;
 		padding-top: 8px;
@@ -810,88 +852,126 @@ textarea {
 	.featured-image, .image-container {
 		height: 25vh;
 	}
+    .navigation-cart-circle {
+        right: 8px;
+        bottom: 11px;
+        font-size: 11px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        font-weight: 700;
+    }
+    #shopping-container{
+        max-width: 20%;
+    }
 }
 
 @media all and (max-width: 1000px) and (min-width: 760px) {
-	.max-width-33{
-		max-width: 50%;
-	}
-	#searchValue {
-		font-size: 18px;
-	}
-	.btn {
-		font-size: 12px;
-	}
-	#about-me h2 {
-		padding-top: 0px;
-	}
-	.height-40vh {
-		height: 30vh;
-	}
-}
+    .max-width-33 {
+        max-width: 50%;
+    }
 
+    #searchValue {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    #about-me h2 {
+        padding-top: 0px;
+    }
+
+    .height-40vh {
+        height: 30vh;
+    }
+
+    .navigation-cart-circle {
+        font-size: 14px;
+    }
+}
 @media all and (min-width: 1400px) {
-	.menu-text {
-		font-size: 20px;
-	}
-	.menu-container {
-		line-height: 50px;
-		min-width: 250px;
-		height: 50px;
-	}
-	.icon {
-		font-size: 25px;
-	}
-	#searchValue {
-		font-size: 20px;
-	}
-	p {
-		font-size: 20px;
-	}
-	h4 {
-		font-size: 24px;
-	}
-	.category-button {
-		font-size: 22px;
-	}
-	#recommendedProducts a {
-		font-size: 22px;
-	}
-	#productsByCategory a {
-		font-size: 22px;
-	}
-	.follow-icon {
-		height: 41px;
-	}
-	.min-width-100 {
-		min-width: 150px;
-	}
-	#product li {
-		font-size: 20px;
-	}
-	#productLocation span {
-		font-size: 21px;
-	}
-	#productLocation {
-		font-size: 21px;
-	}
-	#productName p {
-		font-size: 21px;
-	}
-	.image-container-columns, .featured-image-columns{
-		height: 30vh;
-	}
-	.height-20vh {
-		height: 30vh;
-	}
-	.number-text {
-		font-size: 25px;
-	}
-	.prev,
-	.next {
-		font-size: 40px;
-	}
-	.close-button {
-		font-size: 30px;
-	}
+        .menu-text {
+            font-size: 20px;
+        }
+
+        .menu-container {
+            line-height: 50px;
+            min-width: 250px;
+            height: 50px;
+        }
+
+        .icon {
+            font-size: 25px;
+        }
+
+        #searchValue {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+        .category-button {
+            font-size: 22px;
+        }
+
+        #recommendedProducts a {
+            font-size: 22px;
+        }
+
+        #productsByCategory a {
+            font-size: 22px;
+        }
+
+        .follow-icon {
+            height: 41px;
+        }
+
+        .min-width-100 {
+            min-width: 150px;
+        }
+
+        #product li {
+            font-size: 20px;
+        }
+
+        #productLocation span {
+            font-size: 21px;
+        }
+
+        #productLocation {
+            font-size: 21px;
+        }
+
+        #productName p {
+            font-size: 21px;
+        }
+
+        .image-container-columns, .featured-image-columns {
+            height: 30vh;
+        }
+
+        .height-20vh {
+            height: 30vh;
+        }
+
+        .number-text {
+            font-size: 25px;
+        }
+
+        .prev,
+        .next {
+            font-size: 40px;
+        }
+
+        .close-button {
+            font-size: 30px;
+        }
 }

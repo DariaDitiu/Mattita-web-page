@@ -10,7 +10,7 @@
    $mail->Host       = 'smtp.gmail.com'; 			// Specify main and backup server
    $mail->SMTPAuth   = true; 						// Enable SMTP authentication
    $mail->Username   = $mailTo;                 	// SMTP username
-   $mail->Password   = 'S_o_n_g_o_c_u-12&28&87'; 	// SMTP password
+   $mail->Password   = 'XXX'; 	// SMTP password
    $mail->SMTPSecure = 'ssl'; 						// Enable encryption, 'tsl' also accepted
    $mail->Port       = 465; 						//Set the SMTP port number - 587 for authenticated TLS
    
@@ -101,10 +101,11 @@
                   </ul>
                </div>
             </div>
-            <div class="flex-x max-width-10 table-cell">
+            <div id="shopping-container" class="flex-x max-width-10 table-cell">
                <div class="icon-container">
                   <a id="shoppingCart" href="shopping-cart.html">
-                  <span class="glyphicon glyphicon-shopping-cart icon"></span>
+                    <span class="glyphicon glyphicon-shopping-cart icon"></span>
+                    <span id="number-products" class="navigation-cart-circle">0</span>
                   </a>
                </div>
             </div>
